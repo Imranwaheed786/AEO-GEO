@@ -29,7 +29,7 @@ By default, this library:
 - `memory/audits/` may contain competitor URLs, target keywords, audit findings
 - `memory/entities/` may contain third-party brand/person names
 - Not transmitted by this library — but users should be aware when committing repo to public Git, sharing with AI agents, or syncing across devices
-- See [memory-management SKILL.md §GDPR / Privacy Compliance](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) for retention + deletion guidance
+- See [memory-management SKILL.md §GDPR / Privacy Compliance](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) for retention + deletion guidance
 
 ### In scope for security review
 - Memory poisoning across sessions (malicious content written to `memory/` affecting future sessions)

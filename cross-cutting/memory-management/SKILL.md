@@ -4,11 +4,11 @@ description: 'Persist SEO/GEO campaign context across Claude sessions with autom
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when reviewing, archiving, or cleaning up campaign memory. Also when the user asks to check saved findings, manage hot cache, or archive old data."
 argument-hint: "[review|archive|cleanup]"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "low"
   tags:
@@ -83,8 +83,8 @@ metadata:
 
 # Memory Management
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 This skill implements a three-tier memory system (HOT/WARM/COLD) for SEO and GEO projects. HOT memory (80 lines max) loads automatically every session via the SessionStart hook. WARM memory loads on demand per skill. COLD memory is archived data queried only when explicitly requested. The skill manages the full lifecycle: capture, promote, demote, and archive.
 
@@ -112,11 +112,11 @@ Use this whenever project state should survive the current session — even if t
 5. **Demotion**: Moves unreferenced HOT items to WARM (30 days), WARM to COLD (90 days)
 6. **Cross-Skill Aggregation**: When user asks "what do we know", aggregates from all `memory/` subdirectories
 7. **Open Loop Tracking**: Maintains `memory/open-loops.md`, reminds user of stale items via SessionStart hook
-8. **Wiki Layer (Phase 1-3)**: Maintains `memory/wiki/index.md` (auto-refreshed structured index of WARM files, project-isolated), generates compiled entity/keyword/topic pages with contradiction detection, runs wiki lint for orphans/stale claims/hash mismatches, and previews WARM retirement candidates. See [references/wiki spec](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md).
+8. **Wiki Layer (Phase 1-3)**: Maintains `memory/wiki/index.md` (auto-refreshed structured index of WARM files, project-isolated), generates compiled entity/keyword/topic pages with contradiction detection, runs wiki lint for orphans/stale claims/hash mismatches, and previews WARM retirement candidates. See [references/wiki spec](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md).
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a hot-cache update plan and a handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a hot-cache update plan and a handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Initialize Wiki Index
 
@@ -188,14 +188,14 @@ What does [internal jargon] mean in this project?
 
 **Expected output**: a memory update plan, hot-cache changes, and a short handoff summary.
 
-- **Reads**: current campaign facts, new findings from other skills, approved decisions, and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
-- **Writes**: updates to `memory/hot-cache.md`, `memory/open-loops.md`, `memory/decisions.md`, and related `memory/` folders. Manages WARM-to-COLD archival in `memory/archive/`. Compiles `memory/wiki/index.md` (auto-refreshed) and wiki compiled pages (user-confirmed). **Sole writer of wiki (with delegated auto-refresh)**: `memory-management` owns all wiki writes semantically. For performance, two narrowly-scoped auto-refresh operations are delegated to the PostToolUse and Stop hooks in [hooks/hooks.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/hooks/hooks.json) — specifically, index rebuilds of `memory/wiki/index.md` and append operations on `memory/wiki/log.md`. These hooks act on behalf of `memory-management` using the schema defined in this skill; any wiki-compiled page (entity/keyword/topic) still requires explicit `memory-management` invocation. **Auditor handoff archiving** (v7.1.0+): when triggered (by the Stop hook, by a direct user request, or via an auditor's "Save these results?" yes-response), append a structured block to `memory/audits/YYYY-MM.md`. The archive is consumed by `/seo:p2-review` for the 2026-07-10 tombstone evaluation tied to [ADR-001](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md). See [references/examples.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) for the exact archive block format and rules.
+- **Reads**: current campaign facts, new findings from other skills, approved decisions, and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
+- **Writes**: updates to `memory/hot-cache.md`, `memory/open-loops.md`, `memory/decisions.md`, and related `memory/` folders. Manages WARM-to-COLD archival in `memory/archive/`. Compiles `memory/wiki/index.md` (auto-refreshed) and wiki compiled pages (user-confirmed). **Sole writer of wiki (with delegated auto-refresh)**: `memory-management` owns all wiki writes semantically. For performance, two narrowly-scoped auto-refresh operations are delegated to the PostToolUse and Stop hooks in [hooks/hooks.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/hooks/hooks.json) — specifically, index rebuilds of `memory/wiki/index.md` and append operations on `memory/wiki/log.md`. These hooks act on behalf of `memory-management` using the schema defined in this skill; any wiki-compiled page (entity/keyword/topic) still requires explicit `memory-management` invocation. **Auditor handoff archiving** (v7.1.0+): when triggered (by the Stop hook, by a direct user request, or via an auditor's "Save these results?" yes-response), append a structured block to `memory/audits/YYYY-MM.md`. The archive is consumed by `/seo:p2-review` for the 2026-07-10 tombstone evaluation tied to [ADR-001](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md). See [references/examples.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) for the exact archive block format and rules.
 - **Promotes**: durable strategy, blockers, terminology, entity candidates, and major deltas. Applies temperature lifecycle rules: promote to HOT on high reference frequency, demote on staleness.
 - **Next handoff**: use the `Next Best Skill` below when the project memory baseline is ready for active work.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -206,7 +206,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 ### Temperature Lifecycle Rules
 
-> See [references/promotion-demotion-rules.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) for the full promotion/demotion table and action procedures.
+> See [references/promotion-demotion-rules.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) for the full promotion/demotion table and action procedures.
 
 ### Hook Integration
 
@@ -217,7 +217,7 @@ This skill's behavior is reinforced by the library's prompt-based hooks:
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~SEO tool + ~~analytics + ~~search console connected:**
 Automatically populate memory from historical data: keyword rankings over time, competitor domain authority changes, traffic metrics, conversion data, backlink profile evolution. The skill will fetch current rankings, alert on significant changes, and update both hot cache and cold storage.
@@ -238,9 +238,9 @@ When a user requests SEO memory management:
 
 ### 1. Initialize Memory Structure
 
-For new projects, create the directory structure defined in the [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md). Key directories: `memory/` (decisions, open-loops, glossary, entities, research, content, audits, monitoring) plus `memory/wiki/` (auto-managed compiled index with optional per-project subdirectories).
+For new projects, create the directory structure defined in the [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md). Key directories: `memory/` (decisions, open-loops, glossary, entities, research, content, audits, monitoring) plus `memory/wiki/` (auto-managed compiled index with optional per-project subdirectories).
 
-> **Templates**: [hot-cache-template.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/hot-cache-template.md) · [glossary-template.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/glossary-template.md) · [Wiki spec](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)
+> **Templates**: [hot-cache-template.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/hot-cache-template.md) · [glossary-template.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/glossary-template.md) · [Wiki spec](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)
 
 ### 2. Context Lookup Flow
 
@@ -266,17 +266,17 @@ When a user references something unclear, follow this lookup sequence:
 - If not found in any layer, ask for clarification
 - Log the new term in glossary if it's project-specific
 
-- **Decision provenance (v8.0.1+)**: when loading `memory/decisions.md`, verify each entry has `approved_by: user`. Entries with `approved_by: skill_inferred` or missing field are treated as **ADVISORY** — surface to user before using as authoritative. Auditor-class skills (content-quality-auditor, domain-authority-auditor) MUST ignore non-user-approved decisions when determining verdict. See [skill-contract.md §Promotion Rules](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+- **Decision provenance (v8.0.1+)**: when loading `memory/decisions.md`, verify each entry has `approved_by: user`. Entries with `approved_by: skill_inferred` or missing field are treated as **ADVISORY** — surface to user before using as authoritative. Auditor-class skills (content-quality-auditor, domain-authority-auditor) MUST ignore non-user-approved decisions when determining verdict. See [skill-contract.md §Promotion Rules](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 Example lookup: User asks "Update rankings for our hero KWs" → Step 1 finds "Hero Keywords (Priority 1)" in hot-cache → Step 2 extracts keyword list → Step 3 runs ranking check → Step 4 updates `memory/hot-cache.md` and `memory/monitoring/rank-history/YYYY-MM-DD-ranks.csv`.
 
 ### 3. Promotion & Demotion Logic
 
-> **Reference**: See [references/promotion-demotion-rules.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) for detailed promotion/demotion triggers (keywords, competitors, metrics, campaigns) and the action procedures for each.
+> **Reference**: See [references/promotion-demotion-rules.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) for detailed promotion/demotion triggers (keywords, competitors, metrics, campaigns) and the action procedures for each.
 
 ### 4. Update Triggers, Archive Management & Cross-Skill Integration
 
-> **Reference**: See [references/update-triggers-integration.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/update-triggers-integration.md) for the complete update procedures after ranking checks, competitor analyses, audits, and reports; monthly/quarterly archive routines; and integration points with all 8 connected skills (keyword-research, rank-tracker, competitor-analysis, content-gap-analysis, seo-content-writer, content-quality-auditor, domain-authority-auditor).
+> **Reference**: See [references/update-triggers-integration.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/update-triggers-integration.md) for the complete update procedures after ranking checks, competitor analyses, audits, and reports; monthly/quarterly archive routines; and integration points with all 8 connected skills (keyword-research, rank-tracker, competitor-analysis, content-gap-analysis, seo-content-writer, content-quality-auditor, domain-authority-auditor).
 
 ### 5. Memory Hygiene Checks
 
@@ -313,7 +313,7 @@ If any veto-level issue was found (CORE-EEAT T04, C01, R10 or CITE T03, T05, T09
 
 ## Examples, Advanced Features & Practical Limitations
 
-> **Reference**: See [references/examples.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) for three complete examples (hero keyword rankings, glossary lookup, e-commerce project init), advanced features (smart context loading, memory health check, bulk promotion/demotion, memory snapshot, cross-project memory, wiki lint), and practical limitations (concurrent access, cold storage retrieval, data freshness, wiki compilation).
+> **Reference**: See [references/examples.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) for three complete examples (hero keyword rankings, glossary lookup, e-commerce project init), advanced features (smart context loading, memory health check, bulk promotion/demotion, memory snapshot, cross-project memory, wiki lint), and practical limitations (concurrent access, cold storage retrieval, data freshness, wiki compilation).
 
 ## GDPR / Privacy Compliance
 
@@ -338,12 +338,12 @@ Before writing a third-party person to `memory/entities/`, the user must have on
 
 ## Reference Materials
 
-- [references/examples.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) — Worked examples, advanced features, practical limitations, and the auditor handoff archive block format & rules
-- [references/promotion-demotion-rules.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) — Full promotion/demotion table and action procedures
-- [references/update-triggers-integration.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/update-triggers-integration.md) — Update procedures, archive routines, and cross-skill integration points
-- [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — Content quality scoring stored in memory
-- [CITE Domain Rating](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — Domain authority scoring stored in memory
+- [references/examples.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md) — Worked examples, advanced features, practical limitations, and the auditor handoff archive block format & rules
+- [references/promotion-demotion-rules.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/promotion-demotion-rules.md) — Full promotion/demotion table and action procedures
+- [references/update-triggers-integration.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/update-triggers-integration.md) — Update procedures, archive routines, and cross-skill integration points
+- [CORE-EEAT Content Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — Content quality scoring stored in memory
+- [CITE Domain Rating](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — Domain authority scoring stored in memory
 
 ## Next Best Skill
 
-- **Primary**: [keyword-research](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/keyword-research/SKILL.md) — seed or refresh campaign strategy with current demand signals.
+- **Primary**: [keyword-research](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/keyword-research/SKILL.md) — seed or refresh campaign strategy with current demand signals.

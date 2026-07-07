@@ -5,12 +5,12 @@ version: "9.0.0"
 license: Apache-2.0
 allowed-tools: WebFetch
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when auditing content quality before publishing. Runs CORE-EEAT 80-item scoring with veto checks. Also when the user asks for E-E-A-T analysis or publish readiness."
 argument-hint: "<URL or paste content> [keyword]"
 class: auditor
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "high"
   tags:
@@ -69,11 +69,11 @@ metadata:
 
 # Content Quality Auditor
 
-> Based on [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark). Full benchmark reference: [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+> Based on [CORE-EEAT Content Benchmark](https://github.com/Imranwaheed786/core-eeat-content-benchmark). Full benchmark reference: [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
 
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill evaluates content quality across 80 standardized criteria organized in 8 dimensions. It produces a comprehensive audit report with per-item scoring, dimension and system scores, weighted totals by content type, and a prioritized action plan.
@@ -107,7 +107,7 @@ Use this when content needs a quality check before publishing — even if the us
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a publish verdict and a handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a publish verdict and a handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Audit Content
 
@@ -141,14 +141,14 @@ Audit my content vs competitor: [your content] vs [competitor content]
 
 **Expected output**: a CORE-EEAT audit report, a publish-readiness verdict, and a short handoff summary ready for `memory/audits/content/`.
 
-- **Reads**: the target content, content type, supporting evidence, and any prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the target content, content type, supporting evidence, and any prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing audit report plus a reusable summary that can be stored under `memory/audits/content/`.
 - **Promotes**: veto items and publish blockers to `memory/hot-cache.md` (auto-saved, no user confirmation needed). Top improvement priorities to `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below once the verdict is clear.
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~web crawler + ~~SEO tool connected:**
 Automatically fetch page content, extract HTML structure, check schema markup, verify internal/external links, and pull competitor content for comparison.
@@ -204,7 +204,7 @@ If any veto item triggers, flag it prominently at the top of the report and reco
 
 ### Step 2: CORE Audit (40 items)
 
-Evaluate each item against the criteria in [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md).
+Evaluate each item against the criteria in [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md).
 
 Score each item:
 - **Pass** = 10 points (fully meets criteria)
@@ -241,7 +241,7 @@ Repeat the same table format for **O** (Organization), **R** (Referenceability),
 
 Repeat the same table format for **Ept** (Expertise), **A** (Authority), and **T** (Trust), scoring all 10 items per dimension.
 
-See [references/item-reference.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) for the complete 80-item ID lookup table and site-level item handling notes.
+See [references/item-reference.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) for the complete 80-item ID lookup table and site-level item handling notes.
 
 <!-- runbook-sync start: source_sha256=4a5e414fe8ca7082b173cd76f09a081504997534b80ac4dabd45084f80440a61 block_sha256=260ff0119ba5a4719c2dd3c1fce59771f73cbfa4c55acba45f9c010a9e5ddd0a -->
 ## §1 · Handoff Schema (authoritative)
@@ -281,7 +281,7 @@ This prevents breakage when an audit produced before the upgrade is consumed by 
 
 ### Non-auditor skills
 
-Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
+Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
 
 ---
 
@@ -292,8 +292,8 @@ Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](h
 **Rule summary**: when any veto item fails, cap the affected dimension and the overall score at **60/100**. Show raw and capped side by side in the internal report. Set `cap_applied: true` in handoff.
 
 **Veto items**:
-- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
-- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
+- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
 
 ### Decision table
 
@@ -439,7 +439,7 @@ If any check fails, force `status: BLOCKED` with `open_loops: ["artifact_gate_fa
 
 ## §5 · User-Facing Translation Layer
 
-Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
+Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
 
 ### Forbidden in user-visible output
 
@@ -538,7 +538,7 @@ Auditor-emitted audit files MUST satisfy these structural invariants for the Pos
 2. **Frontmatter**: include `class: auditor-output` in YAML frontmatter (enforced by Runbook §1)
 3. **Scope**: YAML handoff blocks appearing elsewhere (blog posts, README examples, skill documentation) are NOT audit artifacts and MUST NOT be treated as such by downstream skills — the path + frontmatter combination is the authoritative filter
 
-This is a **restatement for readability** — the authoritative rule lives in [references/auditor-runbook.md §1](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). If this text drifts from §1 source, Runbook wins.
+This is a **restatement for readability** — the authoritative rule lives in [references/auditor-runbook.md §1](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). If this text drifts from §1 source, Runbook wins.
 
 ### Step 4: Scoring & Report
 
@@ -686,7 +686,7 @@ If any veto-level issue was found (CORE-EEAT T04, C01, R10 or CITE T03, T05, T09
 
 ## Example
 
-See [references/item-reference.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) for a complete scored example showing the C dimension with all 10 items, priority improvements, and weighted scoring.
+See [references/item-reference.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) for a complete scored example showing the C dimension with all 10 items, priority improvements, and weighted scoring.
 
 ## Tips for Success
 
@@ -697,18 +697,18 @@ See [references/item-reference.md](https://github.com/aaron-he-zhu/seo-geo-claud
 4. **Some EEAT items need site-level data** — Don't penalize content for things only observable at the site level (backlinks, brand recognition)
 5. **Use the weighted score, not just the raw average** — A product review with strong Exclusivity matters more than strong Authority
 6. **Re-audit after improvements** — Run again to verify score improvements and catch regressions
-7. **Pair with CITE for domain-level context** — A high content score on a low-authority domain signals a different priority than the reverse; run [domain-authority-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md) for the full 120-item picture
+7. **Pair with CITE for domain-level context** — A high content score on a low-authority domain signals a different priority than the reverse; run [domain-authority-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md) for the full 120-item picture
 
 ## Reference Materials
 
-- [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — Full 80-item benchmark with dimension definitions, scoring criteria, and GEO-First item markers
-- [references/item-reference.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) — All 80 item IDs in a compact lookup table + site-level item handling notes + scored example report
-- [GEO Score Feedback Loop](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md) — Optional: how to validate the GEO Score prediction against actual AI engine citation behavior (T+14/T+45/T+90 measurement protocol). Relevant for agencies and GEO teams tracking prediction accuracy over time.
+- [CORE-EEAT Content Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — Full 80-item benchmark with dimension definitions, scoring criteria, and GEO-First item markers
+- [references/item-reference.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/references/item-reference.md) — All 80 item IDs in a compact lookup table + site-level item handling notes + scored example report
+- [GEO Score Feedback Loop](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md) — Optional: how to validate the GEO Score prediction against actual AI engine citation behavior (T+14/T+45/T+90 measurement protocol). Relevant for agencies and GEO teams tracking prediction accuracy over time.
 
 ## Next Best Skill
 
-- **Primary**: [content-refresher](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) — turn FIX-verdict findings into a concrete rewrite plan.
+- **Primary**: [content-refresher](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) — turn FIX-verdict findings into a concrete rewrite plan.
 - **Also consider** (pick by verdict):
-  - **BLOCK verdict**: [seo-content-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — veto item typically needs a substantial rewrite, not an incremental refresh.
-  - **BLOCK verdict (entity/authority issue)**: [entity-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — when C01/T04 veto traces to entity recognition gaps.
-  - **SHIP verdict**: [rank-tracker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) — content cleared; establish a baseline and watch performance.
+  - **BLOCK verdict**: [seo-content-writer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — veto item typically needs a substantial rewrite, not an incremental refresh.
+  - **BLOCK verdict (entity/authority issue)**: [entity-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — when C01/T04 veto traces to entity recognition gaps.
+  - **SHIP verdict**: [rank-tracker](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) — content cleared; establish a baseline and watch performance.

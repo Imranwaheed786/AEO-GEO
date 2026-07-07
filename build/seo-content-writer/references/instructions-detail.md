@@ -26,7 +26,7 @@ Confirm or ask for:
 
 ### 2. Load CORE-EEAT Quality Constraints
 
-Before writing, load content quality standards from the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md):
+Before writing, load content quality standards from the [CORE-EEAT Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md):
 
 ```markdown
 ### CORE-EEAT Pre-Write Checklist
@@ -55,9 +55,9 @@ Apply these standards while writing:
 | O10 | Multimedia Structure | Images/videos have captions and carry information |
 | E07 | Practical Tools | Include downloadable templates, checklists, or calculators |
 
-_These 16 items apply across all content types. For content-type-specific dimension weights, see the Content-Type Weight Table in [core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)._
-_Full 80-item benchmark: [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)_
-_For complete content quality audit: use [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
+_These 16 items apply across all content types. For content-type-specific dimension weights, see the Content-Type Weight Table in [core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)._
+_Full 80-item benchmark: [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)_
+_For complete content quality audit: use [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
 ```
 
 ### 3. Research and Plan
@@ -133,7 +133,7 @@ Structure: H1 (primary keyword, one per page) > Introduction (100-150 words, hoo
 
 ### 7. Apply On-Page SEO Best Practices
 
-See [seo-writing-checklist.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) for the full on-page SEO checklist, content writing template, and featured snippet optimization patterns.
+See [seo-writing-checklist.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) for the full on-page SEO checklist, content writing template, and featured snippet optimization patterns.
 
 Key requirements while writing:
 - Primary keyword in title, H1, first 100 words, at least one H2, and conclusion
@@ -162,7 +162,7 @@ Score content across 10 SEO factors (title, meta description, H1, keyword placem
 
 Then verify the 16 CORE-EEAT pre-write constraints (C01, C02, C06, C10, O01, O02, O06, O09, R01, R02, R04, R07, C03, O08, O10, E07) with pass/warning/fail status. List items needing attention.
 
-_For full 80-item audit, use [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
+_For full 80-item audit, use [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
 
 ---
 

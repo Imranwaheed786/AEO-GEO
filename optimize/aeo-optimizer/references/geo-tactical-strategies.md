@@ -26,7 +26,7 @@ Do not waste time with long introductions. If the query is "Best video editing l
 
 > "The best video editing laptop is [X] because of [Y]."
 
-This aligns with the A.Q.C.E. Answer layer (see [aeo-writing-framework.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-writing-framework.md)).
+This aligns with the A.Q.C.E. Answer layer (see [aeo-writing-framework.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-writing-framework.md)).
 
 ### Format for Scanning
 
@@ -194,7 +194,7 @@ AI models do not just read your blog — they scan the entire internet to verify
 
 ### Cross-Platform Consistency Rule
 
-Your messaging must be **identical** across all platforms. This feeds directly into the Consensus Strategy (see [consensus-building.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/consensus-building.md)):
+Your messaging must be **identical** across all platforms. This feeds directly into the Consensus Strategy (see [consensus-building.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/consensus-building.md)):
 
 - Same USP phrasing on website, LinkedIn, and YouTube
 - Same statistics cited across all platforms

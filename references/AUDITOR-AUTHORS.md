@@ -1,14 +1,14 @@
 # Auditor Authors Guide
 
-> For contributors writing a new auditor-class skill (for example, `mobile-seo-auditor` or `local-seo-auditor`). If you are NOT writing an auditor, read [skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) instead.
+> For contributors writing a new auditor-class skill (for example, `mobile-seo-auditor` or `local-seo-auditor`). If you are NOT writing an auditor, read [skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) instead.
 
 ## Start here
 
 Read these three files in order before touching anything:
 
-1. **[skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md)** — the general handoff contract all 20 skills follow
-2. **[auditor-runbook.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) §1-5** — the auditor-specific extension: handoff schema, cap arithmetic, guardrails, Artifact Gate, translation
-3. **[contract-fail-caps.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md)** (from v7.2.0) — the cap numbers, single source of truth
+1. **[skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md)** — the general handoff contract all 20 skills follow
+2. **[auditor-runbook.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) §1-5** — the auditor-specific extension: handoff schema, cap arithmetic, guardrails, Artifact Gate, translation
+3. **[contract-fail-caps.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md)** (from v7.2.0) — the cap numbers, single source of truth
 
 Then copy the template below.
 
@@ -154,7 +154,7 @@ A: Yes if you have veto items that warrant a score cap. The Runbook arithmetic i
 
 ## Related
 
-- [auditor-runbook.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — authoritative Runbook (§1-5 inlined, §6 source-only)
-- [skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) — general contract all skills follow
-- [ADR-001](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — why inlining was chosen over contract inheritance
-- [commands/contract-lint.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/commands/contract-lint.md) (v7.2.0) — drift detection command
+- [auditor-runbook.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — authoritative Runbook (§1-5 inlined, §6 source-only)
+- [skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) — general contract all skills follow
+- [ADR-001](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — why inlining was chosen over contract inheritance
+- [commands/contract-lint.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/commands/contract-lint.md) (v7.2.0) — drift detection command

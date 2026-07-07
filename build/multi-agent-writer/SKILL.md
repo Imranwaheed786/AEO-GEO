@@ -4,11 +4,11 @@ description: 'Use when the user asks to "write semantic content", "run writing s
 version: "9.1.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when the user provides a content brief and wants a complete semantic SEO article that ranks fast. Also when the user says @writing, asks for multi-agent content, entity-rich articles, EVA-triple-based writing, or wants content optimized for both Google NLP and AI answer engines."
 argument-hint: "<content brief or topic>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.1.0"
   geo-relevance: "high"
   tags:
@@ -88,8 +88,8 @@ metadata:
 
 # Multi-Agent Semantic Writing System
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 22 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 22 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 This skill runs a **15-agent pipeline** that converts a content brief into a complete, entity-rich, semantic SEO content draft. Every agent completes its task before the next agent starts. The output is optimized for Google NLP extraction, AI Overview citation, featured snippets, and human readability.
 
@@ -126,7 +126,7 @@ Use this when the conversation involves producing a complete article from a cont
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### From a Content Brief
 
@@ -150,14 +150,14 @@ Run the multi-agent writing system for "wheelchair ramp slope calculator" target
 
 **Expected output**: a complete semantic SEO content draft with metadata, entity map, EVA audit, internal links, schema, FAQs, and quality score, plus a short handoff summary ready for `memory/content/`.
 
-- **Reads**: the content brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the content brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a complete article draft with all 15-agent outputs plus a reusable summary that can be stored under `memory/content/`.
 - **Promotes**: content strategy decisions, entity maps, EVA findings, and audit scores to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the draft is ready for quality gate review.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -185,7 +185,7 @@ Source: [Chapter 5: Semantic Content Writing Framework](https://www.mubashirhass
 
 When a user provides a content brief, run all 15 agents in sequence. Each agent must complete before the next starts.
 
-> **Reference**: See [references/agent-pipeline.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/agent-pipeline.md) for the full agent prompts, output formats, quality rules, and worked examples.
+> **Reference**: See [references/agent-pipeline.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/agent-pipeline.md) for the full agent prompts, output formats, quality rules, and worked examples.
 
 ### Phase Summary
 
@@ -303,11 +303,11 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Agent Pipeline](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/agent-pipeline.md) — Full 15-agent prompts, output formats, quality rules, and worked examples
-- [Master Prompt](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/master-prompt.md) — Copy-paste prompt for any LLM
+- [Agent Pipeline](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/agent-pipeline.md) — Full 15-agent prompts, output formats, quality rules, and worked examples
+- [Master Prompt](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/multi-agent-writer/references/master-prompt.md) — Copy-paste prompt for any LLM
 - [Chapter 5 Source](https://www.mubashirhassan.com/seo/chapter5.html) — Original semantic content writing framework
 
 ## Next Best Skill
 
-- **Primary**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing with full 80-item CORE-EEAT audit.
-- **Alternative**: [geo-content-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — additional GEO optimization pass for AI citation readiness.
+- **Primary**: [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing with full 80-item CORE-EEAT audit.
+- **Alternative**: [geo-content-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — additional GEO optimization pass for AI citation readiness.

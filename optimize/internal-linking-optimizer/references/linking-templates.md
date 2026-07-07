@@ -1,12 +1,12 @@
 # Internal Linking Optimizer — Output Templates
 
-Detailed output templates for internal-linking-optimizer steps 3-7. Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/SKILL.md).
+Detailed output templates for internal-linking-optimizer steps 3-7. Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/SKILL.md).
 
 ---
 
 ## Step 3: Analyze Anchor Text Distribution
 
-**CORE-EEAT alignment**: Internal linking quality maps to R08 (Internal Link Graph) in the CORE-EEAT benchmark -- use descriptive anchors, ensure links support topical authority. See [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) for full audit.
+**CORE-EEAT alignment**: Internal linking quality maps to R08 (Internal Link Graph) in the CORE-EEAT benchmark -- use descriptive anchors, ensure links support topical authority. See [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) for full audit.
 
 ```markdown
 ## Anchor Text Analysis

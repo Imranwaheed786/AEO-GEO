@@ -95,7 +95,7 @@ _(when competitors= provided)_
 
 ## Related Skills
 
-- [keyword-research](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/keyword-research/SKILL.md) -- Keyword discovery and analysis
-- [competitor-analysis](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/competitor-analysis/SKILL.md) -- Competitive analysis
-- [content-gap-analysis](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/SKILL.md) -- Find missing content opportunities
-- [seo-content-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) -- Write content for target keywords
+- [keyword-research](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/keyword-research/SKILL.md) -- Keyword discovery and analysis
+- [competitor-analysis](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/competitor-analysis/SKILL.md) -- Competitive analysis
+- [content-gap-analysis](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/SKILL.md) -- Find missing content opportunities
+- [seo-content-writer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) -- Write content for target keywords

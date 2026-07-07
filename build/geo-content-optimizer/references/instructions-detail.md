@@ -8,7 +8,7 @@ Full workflow templates, CORE-EEAT GEO mapping, scoring tables, examples, and ti
 
 ### 1. Load CORE-EEAT GEO-First Optimization Targets
 
-Before optimizing, load GEO-critical items from the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md):
+Before optimizing, load GEO-critical items from the [CORE-EEAT Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md):
 
 ```markdown
 ### CORE-EEAT GEO-First Targets
@@ -38,7 +38,7 @@ Exp10 | Ept05, Ept08 | A08
 | Perplexity AI | E01, R03, R05, Ept05 |
 | Claude | R04, Ept08, Exp10, R03 |
 
-_Full benchmark: [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)_
+_Full benchmark: [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)_
 ```
 
 ### 2. Analyze Current Content
@@ -72,7 +72,7 @@ _Full benchmark: [references/core-eeat-benchmark.md](https://github.com/aaron-he
 
 ### 3. Apply GEO Optimization Techniques
 
-> **GEO fundamentals**: AI systems prioritize content that is authoritative (expert credentials, proper citations), accurate (verifiable, up-to-date), clear (well-structured, unambiguous), and quotable (standalone answers, specific data). See [references/geo-optimization-techniques.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/geo-optimization-techniques.md) for details.
+> **GEO fundamentals**: AI systems prioritize content that is authoritative (expert credentials, proper citations), accurate (verifiable, up-to-date), clear (well-structured, unambiguous), and quotable (standalone answers, specific data). See [references/geo-optimization-techniques.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/geo-optimization-techniques.md) for details.
 
 Apply the six core optimization techniques: definition optimization, quotable statement creation, authority signal enhancement, structure optimization, factual density improvement, and FAQ schema implementation.
 
@@ -155,7 +155,7 @@ After optimization, verify GEO-First items:
 
 **Items Needing Attention**: [list any Warn/Fail items]
 
-_For full 80-item audit, use [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
+_For full 80-item audit, use [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)_
 ```
 
 ---

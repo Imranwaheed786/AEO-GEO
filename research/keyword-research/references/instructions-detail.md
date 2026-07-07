@@ -174,7 +174,7 @@ Produce a report containing: Executive Summary, Top Keyword Opportunities (Quick
 | "Consider creating content around this topic" | "Write '[Tool A] vs [Tool B] for small teams' — 1,200/mo searches, current #1 is a 2022 article with 12 backlinks" |
 | "Optimize your page for this keyword" | "Add primary keyword to H1 (currently missing), write a 40-word direct answer in paragraph 1, add 3 internal links from your /blog/ cluster" |
 
-> **Reference**: See [references/example-report.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/keyword-research/references/example-report.md) for the full report template and example.
+> **Reference**: See [references/example-report.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/keyword-research/references/example-report.md) for the full report template and example.
 
 ---
 

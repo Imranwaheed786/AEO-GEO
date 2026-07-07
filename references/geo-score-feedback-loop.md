@@ -3,9 +3,9 @@
 Closes the open loop flagged by Panel P5 (GEO specialist): the library's `GEO Score = CORE avg` is a **prediction** of AI citation likelihood, but there is no mechanism to verify the prediction against actual AI-engine behavior. This file defines a lightweight feedback loop that records predicted vs actual and surfaces model drift.
 
 Referenced by:
-- [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — produces the prediction
-- [geo-content-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — consumes the prediction
-- [ai-overview-recovery playbook](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/ai-overview-recovery.md) — ground-truth source for actuals
+- [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — produces the prediction
+- [geo-content-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — consumes the prediction
+- [ai-overview-recovery playbook](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/ai-overview-recovery.md) — ground-truth source for actuals
 
 ---
 

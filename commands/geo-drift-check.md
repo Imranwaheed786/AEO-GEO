@@ -12,7 +12,7 @@ parameters:
 
 # GEO Drift Check Command
 
-Closes the open loop defined in [references/geo-score-feedback-loop.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md): validates each **predicted GEO Score** (from `content-quality-auditor`) against **actual AI-engine citation behavior** at T+14 / T+45 / T+90 intervals.
+Closes the open loop defined in [references/geo-score-feedback-loop.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md): validates each **predicted GEO Score** (from `content-quality-auditor`) against **actual AI-engine citation behavior** at T+14 / T+45 / T+90 intervals.
 
 **Design philosophy — this is a pure-markdown command.** No Python script, no scheduled runner, no bundled API keys. The command uses whichever AI-engine MCP servers the user has already connected. When no MCP is available for an engine, the command degrades to a fill-in-the-blank prompt where the user pastes responses manually.
 
@@ -105,6 +105,6 @@ Marked **experimental in v9.0.0**. Requires:
 
 ## Related
 
-- [references/geo-score-feedback-loop.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md) — full spec
-- [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — produces the prediction
-- [memory-management](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) — record storage
+- [references/geo-score-feedback-loop.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/geo-score-feedback-loop.md) — full spec
+- [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — produces the prediction
+- [memory-management](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) — record storage

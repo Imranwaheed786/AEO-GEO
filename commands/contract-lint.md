@@ -15,9 +15,9 @@ parameters:
 
 # Contract Lint
 
-> Validates auditor Runbook inline copies, handoff schema compliance, and user-facing jargon leaks across all SKILL.md files. Part of the [SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills).
+> Validates auditor Runbook inline copies, handoff schema compliance, and user-facing jargon leaks across all SKILL.md files. Part of the [SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills).
 
-**Authoritative check list**: this command validates [references/auditor-runbook.md §6 Lint Coverage Manifest](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). When the Runbook §6 manifest changes, update this command's check list in the same commit. If the two disagree, the Runbook wins.
+**Authoritative check list**: this command validates [references/auditor-runbook.md §6 Lint Coverage Manifest](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). When the Runbook §6 manifest changes, update this command's check list in the same commit. If the two disagree, the Runbook wins.
 
 ## What It Checks
 
@@ -148,10 +148,10 @@ Report written to `references/lint-latest.md` (committed location — not `memor
 
 ## Self-Maintenance
 
-**Important**: when [references/auditor-runbook.md §6 Lint Coverage Manifest](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) changes, this command's check list must be updated in the same commit. If they disagree, the Runbook §6 wins and contract-lint is out of date.
+**Important**: when [references/auditor-runbook.md §6 Lint Coverage Manifest](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) changes, this command's check list must be updated in the same commit. If they disagree, the Runbook §6 wins and contract-lint is out of date.
 
 Drift between this command and Runbook §6 is itself a lintable condition — contract-lint opens by verifying that its internal check list matches §6. If it doesn't, it refuses to run and recommends the maintainer update this file.
 
 ## Notes
 
-> **For new auditor-class skill authors**: to register a new auditor-class skill with contract-lint, add `class: auditor` to your SKILL.md frontmatter. The lint discovers auditor skills by frontmatter glob, not by hardcoded manifest. See [AUDITOR-AUTHORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md) for the full onboarding guide.
+> **For new auditor-class skill authors**: to register a new auditor-class skill with contract-lint, add `class: auditor` to your SKILL.md frontmatter. The lint discovers auditor skills by frontmatter glob, not by hardcoded manifest. See [AUDITOR-AUTHORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md) for the full onboarding guide.

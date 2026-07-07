@@ -4,12 +4,12 @@ description: '40-item CITE domain audit: citation, impact, trust, entity scoring
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when auditing domain trust and authority. Runs CITE 40-item scoring with veto checks. Also when the user asks about domain credibility or citation trustworthiness."
 argument-hint: "<domain>"
 class: auditor
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "medium"
   tags:
@@ -67,15 +67,15 @@ metadata:
 
 # Domain Authority Auditor
 
-> Based on [CITE Domain Rating](https://github.com/aaron-he-zhu/cite-domain-rating). Full benchmark reference: [references/cite-domain-rating.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
+> Based on [CITE Domain Rating](https://github.com/Imranwaheed786/cite-domain-rating). Full benchmark reference: [references/cite-domain-rating.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This cross-cutting skill is part of the protocol layer and follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill evaluates domain authority across 40 standardized criteria organized in 4 dimensions. It produces a comprehensive audit report with per-item scoring, dimension and weighted scores by domain type, veto item checks, and a prioritized action plan.
 
-**Sister skill**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) evaluates content at the page level (80 items). This skill evaluates the domain behind the content (40 items). Together they provide a complete 120-item assessment.
+**Sister skill**: [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) evaluates content at the page level (80 items). This skill evaluates the domain behind the content (40 items). Together they provide a complete 120-item assessment.
 
 > **Namespace note**: CITE uses C01-C10 for Citation items; CORE-EEAT uses C01-C10 for Contextual Clarity items. In combined 120-item assessments, prefix with the framework name (e.g., CITE-C01 vs CORE-C01) to avoid confusion.
 
@@ -106,7 +106,7 @@ Use this when domain credibility or citation trustworthiness is in question — 
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a citation-trust verdict and a handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a citation-trust verdict and a handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Audit Your Domain
 
@@ -140,14 +140,14 @@ Run full 120-item assessment on [domain]: CITE domain audit + CORE-EEAT content 
 
 **Expected output**: a CITE audit report, a citation-trust verdict, and a short handoff summary ready for `memory/audits/domain/`.
 
-- **Reads**: the target domain, supporting authority signals, comparison domains, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the target domain, supporting authority signals, comparison domains, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing authority report plus a reusable summary that can be stored under `memory/audits/domain/`.
 - **Promotes**: veto items and domain risks to `memory/hot-cache.md` (auto-saved). Authority context to `memory/audits/domain/`. Results feed into entity-optimizer as authority input for brand's canonical profile.
 - **Next handoff**: use the `Next Best Skill` below once the trust picture is clear.
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 > **Note:** All integrations are optional. This skill works without any API keys — users provide data manually when no tools are connected.
 
@@ -197,11 +197,11 @@ When a user requests a domain authority audit:
 | No Google penalties or deindexing | ✅ Pass / ⚠️ CRITICAL | [If CRITICAL: "Address penalty first; all other optimization is futile"] |
 ```
 
-If any critical trust check triggers, flag it prominently at the top of the report using plain language. CITE Score is capped per [Runbook §2](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md).
+If any critical trust check triggers, flag it prominently at the top of the report using plain language. CITE Score is capped per [Runbook §2](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md).
 
 ### Step 2: C + I Audit (20 items)
 
-Evaluate each item against the criteria in [references/cite-domain-rating.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md).
+Evaluate each item against the criteria in [references/cite-domain-rating.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md).
 
 Score each item:
 - **Pass** = 10 points (fully meets criteria)
@@ -294,7 +294,7 @@ This prevents breakage when an audit produced before the upgrade is consumed by 
 
 ### Non-auditor skills
 
-Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
+Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
 
 ---
 
@@ -305,8 +305,8 @@ Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](h
 **Rule summary**: when any veto item fails, cap the affected dimension and the overall score at **60/100**. Show raw and capped side by side in the internal report. Set `cap_applied: true` in handoff.
 
 **Veto items**:
-- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
-- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
+- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
 
 ### Decision table
 
@@ -452,7 +452,7 @@ If any check fails, force `status: BLOCKED` with `open_loops: ["artifact_gate_fa
 
 ## §5 · User-Facing Translation Layer
 
-Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
+Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
 
 ### Forbidden in user-visible output
 
@@ -551,7 +551,7 @@ Auditor-emitted audit files MUST satisfy these structural invariants for the Pos
 2. **Frontmatter**: include `class: auditor-output` in YAML frontmatter (enforced by Runbook §1)
 3. **Scope**: YAML handoff blocks appearing elsewhere (blog posts, README examples, skill documentation) are NOT audit artifacts and MUST NOT be treated as such by downstream skills — the path + frontmatter combination is the authoritative filter
 
-This is a **restatement for readability** — the authoritative rule lives in [references/auditor-runbook.md §1](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). If this text drifts from §1 source, Runbook wins.
+This is a **restatement for readability** — the authoritative rule lives in [references/auditor-runbook.md §1](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). If this text drifts from §1 source, Runbook wins.
 
 ### Step 4: Scoring & Report
 
@@ -680,7 +680,7 @@ If any veto-level issue was found (CORE-EEAT T04, C01, R10 or CITE T03, T05, T09
 
 ## Example
 
-See [references/example-report.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/references/example-report.md) for a complete CITE audit of cloudhosting.com showing veto check, dimension scores, top 5 improvements, action plan, and cross-reference with CORE-EEAT.
+See [references/example-report.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/references/example-report.md) for a complete CITE audit of cloudhosting.com showing veto check, dimension scores, top 5 improvements, action plan, and cross-reference with CORE-EEAT.
 
 ## Tips for Success
 
@@ -692,14 +692,14 @@ See [references/example-report.md](https://github.com/aaron-he-zhu/seo-geo-claud
 
 ## Reference Materials
 
-- [CITE Domain Rating](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — Full 40-item benchmark with dimension definitions, scoring criteria, domain-type weight tables, and veto items
-- [references/example-report.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/references/example-report.md) — Complete CITE audit example with scored dimensions, top 5 improvements, action plan, and CORE-EEAT cross-reference
+- [CITE Domain Rating](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — Full 40-item benchmark with dimension definitions, scoring criteria, domain-type weight tables, and veto items
+- [references/example-report.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/references/example-report.md) — Complete CITE audit example with scored dimensions, top 5 improvements, action plan, and CORE-EEAT cross-reference
 
 ## Next Best Skill
 
-Follows the verdict-conditional branching pattern in [skill-contract.md §Termination rules for Next Best Skill chains](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md). Visited-set rule applies: if the caller in this chain is the recommended target, STOP and report chain-complete.
+Follows the verdict-conditional branching pattern in [skill-contract.md §Termination rules for Next Best Skill chains](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md). Visited-set rule applies: if the caller in this chain is the recommended target, STOP and report chain-complete.
 
-- **Verdict = CAUTIOUS AND specific issue is link-quality** → Primary: [backlink-analyzer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/backlink-analyzer/SKILL.md) — turn link-quality trust issues into link-level investigation.
-- **Verdict = UNTRUSTED** → Primary: [entity-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — trust-building requires canonical entity work, not more link analysis.
+- **Verdict = CAUTIOUS AND specific issue is link-quality** → Primary: [backlink-analyzer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/monitor/backlink-analyzer/SKILL.md) — turn link-quality trust issues into link-level investigation.
+- **Verdict = UNTRUSTED** → Primary: [entity-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — trust-building requires canonical entity work, not more link analysis.
 - **Verdict = TRUSTED** → Terminal (no recommendation). Chain ends.
 - **Visited-set exception**: if `backlink-analyzer` invoked this audit (toxic ratio > 15% gate check), do NOT hand back to `backlink-analyzer` regardless of verdict — STOP chain and report chain-complete.

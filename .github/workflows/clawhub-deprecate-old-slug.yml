@@ -42,7 +42,7 @@ jobs:
             --name seo-geo-claude-skills \
             --version 8.0.1 \
             --tags latest \
-            --source-repo aaron-he-zhu/seo-geo-claude-skills \
+            --source-repo Imranwaheed786/seo-geo-claude-skills \
             --source-commit "$GITHUB_SHA" \
             --source-ref main \
             --changelog "DEPRECATED — plugin moved to aaron-seo-geo. Please reinstall via clawhub install aaron-seo-geo"

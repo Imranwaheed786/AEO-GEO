@@ -4,11 +4,11 @@ contact_links:
     url: https://agentskills.io/specification.md
     about: Learn the skill format before creating or requesting a skill
   - name: Contributing Guide
-    url: https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONTRIBUTING.md
+    url: https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONTRIBUTING.md
     about: How to contribute a new skill to this repository
   - name: ClawHub Marketplace
-    url: https://clawhub.ai/u/aaron-he-zhu
+    url: https://clawhub.ai/u/Imranwaheed786
     about: Browse and install individual skills via ClawHub
   - name: Skills.sh Marketplace
-    url: https://skills.sh/aaron-he-zhu/seo-geo-claude-skills
+    url: https://skills.sh/Imranwaheed786/seo-geo-claude-skills
     about: Browse and install all 20 skills via skills.sh

@@ -4,11 +4,11 @@ description: 'Use when the user asks to "optimize for answer engines", "AEO stra
 version: "1.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when optimizing content strategy for Answer Engines like ChatGPT, Claude, Gemini, Perplexity, or Google AI Overviews. Also for measuring AI visibility, building brand consensus, tracking AI citations, or transitioning from SEO to AEO."
 argument-hint: "<content URL, brand name, or strategy brief> [target answer engines]"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "1.0.0"
   geo-relevance: "high"
   tags:
@@ -125,8 +125,8 @@ metadata:
 
 # AEO Optimizer
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 23 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This optimize skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 23 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This optimize skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 This skill transforms content strategy from traditional SEO to Answer Engine Optimization (AEO). As AI systems increasingly answer user queries directly — via ChatGPT, Claude, Gemini, and Google AI Overviews — brands must optimize for AI citations, visibility, and consensus rather than rankings alone.
 
@@ -199,14 +199,14 @@ Map my AEO competitors for [brand/niche] — who can I beat and which queries ar
 
 **Expected output**: An AEO audit report with readiness scores, a consensus building plan, AEO KPI framework, and prioritized action items — plus a short handoff summary ready for `memory/audits/aeo-optimizer/`.
 
-- **Reads**: brand name, target queries, current content inventory, competitor landscape, and prior SEO audits from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: brand name, target queries, current content inventory, competitor landscape, and prior SEO audits from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: AEO readiness audit, consensus strategy, KPI framework, and transformation plan that can be stored under `memory/audits/aeo-optimizer/`.
 - **Promotes**: AEO readiness scores, consensus gaps, priority platform targets, and AI model-specific findings to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the audit is complete and content needs tactical optimization.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md)):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md)):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -217,7 +217,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 > **Note:** All integrations are optional. This skill works without any API keys — users provide data manually when no tools are connected.
 
@@ -246,7 +246,7 @@ When a user requests AEO optimization, run these steps:
 7. **Apply LLM Ranking Mechanics** — Score content chunks for autonomy; validate the 3 Retrieval Filters (Consistency, Consensus, Contextual Relevance)
 8. **Produce Transformation Plan** — Map the 5 SEO→AEO shifts; prioritize actions by OCS grade and orbit; structure content calendar
 
-> **References**: [instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md) (strategic workflow) · [query-fan-map.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/query-fan-map.md) (QF Map, hallucination testing) · [competitor-orbits.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/competitor-orbits.md) (orbits, OCS grading) · [hallucination-hunting.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/hallucination-hunting.md) (layering, path tracing, USP extraction) · [content-creation-protocol.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md) (Master Prompt, query analysis) · [llm-ranking-mechanics.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md) (Chunking, 3 Filters)
+> **References**: [instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md) (strategic workflow) · [query-fan-map.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/query-fan-map.md) (QF Map, hallucination testing) · [competitor-orbits.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/competitor-orbits.md) (orbits, OCS grading) · [hallucination-hunting.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/hallucination-hunting.md) (layering, path tracing, USP extraction) · [content-creation-protocol.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md) (Master Prompt, query analysis) · [llm-ranking-mechanics.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md) (Chunking, 3 Filters)
 
 ## Validation Checkpoints
 
@@ -257,7 +257,7 @@ When a user requests AEO optimization, run these steps:
 - [ ] Target answer engines specified (default: all 3 major LLMs + AI Overviews)
 
 ### Output Validation
-- [ ] **Banned-vocab self-check** — scan output for banned words/phrases per [skill-contract.md §Output Voice](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md). Replace any hit with a concrete alternative.
+- [ ] **Banned-vocab self-check** — scan output for banned words/phrases per [skill-contract.md §Output Voice](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md). Replace any hit with a concrete alternative.
 - [ ] AEO readiness score produced for all 8 factors
 - [ ] Consensus strategy includes ICP segmentation (minimum 3 segments)
 - [ ] Multi-platform distribution covers all 4 tiers
@@ -275,7 +275,7 @@ When a user requests AEO optimization, run these steps:
 
 **User**: "Audit my brand's AEO readiness — we're an SEO SaaS tool called RankFlow and we're losing clicks to AI Overviews."
 
-**Output** assesses the 4 answer engine types (prioritizes AI Overviews + ChatGPT for B2B SaaS), audits current citations and visibility across 3 models, identifies a consensus gap (brand appears on G2 but not in Reddit/Quora discussions), and produces a 90-day consensus building plan with ICP-segmented content for beginners, agencies, and enterprise. AEO Readiness Score: 38/100 → target 72/100. See full worked example in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md).
+**Output** assesses the 4 answer engine types (prioritizes AI Overviews + ChatGPT for B2B SaaS), audits current citations and visibility across 3 models, identifies a consensus gap (brand appears on G2 but not in Reddit/Quora discussions), and produces a 90-day consensus building plan with ICP-segmented content for beginners, agencies, and enterprise. AEO Readiness Score: 38/100 → target 72/100. See full worked example in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md).
 
 ### Save Results
 
@@ -293,22 +293,22 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md) — Full 5-step workflow, AEO readiness scoring, audit checklists, worked example
-- [AEO vs SEO Framework](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-vs-seo-framework.md) — The 5 core differences, KPI mapping, content strategy transformation checklist
-- [Answer Engine Types](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/answer-engine-types.md) — Detailed profiles of 4 engine types, AI model personalities, targeting decision matrix
-- [Consensus Building](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/consensus-building.md) — ICP segmentation, multi-platform distribution, message consistency, citation strategy
-- [LLM Ranking Mechanics](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md) — Query Fan Out mapping, Chunk autonomy scoring, 3 Retrieval Filters (Consistency, Consensus, Contextual Relevance)
-- [Query Fan Map](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/query-fan-map.md) — Hallucination gap discovery, 5 query extraction methods, ICP × 5-stage AEO funnel, business-type templates, trust-building growth strategy
-- [Competitor Orbits](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/competitor-orbits.md) — 4R framework, 3 competitor orbits (Core/Mid/Outer), OCS environment grading, Predator Stack attack sequence, negative content budget hack
-- [Hallucination Hunting](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/hallucination-hunting.md) — AI competitor auditing, 6 query layer types, query path tracing, 3-question USP extraction, Match & Exceed vs. Introduce Unique Layers strategies
-- [Content Creation Protocol](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md) — Competitor Analysis (USPs + angles), Query Analysis (customer language, real intent, constraints), Master Prompt template
-- [Prompt Engineering](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/prompt-engineering.md) — 3 prompt elements (Context/Constraints/Format), 5 pro-tips (Role, Filter Bypass, Memory Clear, Anti-Agree, Source Unlock), AEO prompt templates
-- [AEO Writing Framework](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-writing-framework.md) — A.Q.C.E. formula (Answer/Qualify/Cover/Extend), semantic HTML requirements, Information Gain check, quality checklist
-- [AEO FAQ Framework](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-faq-framework.md) — 5 FAQ rules, 4-sentence template (Declarative/Clarification/Guardrail/Brand), hallucination-proof topic discovery
-- [GEO Tactical Strategies](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/geo-tactical-strategies.md) — Snippable content, E.E.A.T. upfront, schema markup templates, multi-platform authority, AI bot indexing, content freshness
+- [Instructions Detail](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/instructions-detail.md) — Full 5-step workflow, AEO readiness scoring, audit checklists, worked example
+- [AEO vs SEO Framework](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-vs-seo-framework.md) — The 5 core differences, KPI mapping, content strategy transformation checklist
+- [Answer Engine Types](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/answer-engine-types.md) — Detailed profiles of 4 engine types, AI model personalities, targeting decision matrix
+- [Consensus Building](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/consensus-building.md) — ICP segmentation, multi-platform distribution, message consistency, citation strategy
+- [LLM Ranking Mechanics](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md) — Query Fan Out mapping, Chunk autonomy scoring, 3 Retrieval Filters (Consistency, Consensus, Contextual Relevance)
+- [Query Fan Map](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/query-fan-map.md) — Hallucination gap discovery, 5 query extraction methods, ICP × 5-stage AEO funnel, business-type templates, trust-building growth strategy
+- [Competitor Orbits](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/competitor-orbits.md) — 4R framework, 3 competitor orbits (Core/Mid/Outer), OCS environment grading, Predator Stack attack sequence, negative content budget hack
+- [Hallucination Hunting](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/hallucination-hunting.md) — AI competitor auditing, 6 query layer types, query path tracing, 3-question USP extraction, Match & Exceed vs. Introduce Unique Layers strategies
+- [Content Creation Protocol](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md) — Competitor Analysis (USPs + angles), Query Analysis (customer language, real intent, constraints), Master Prompt template
+- [Prompt Engineering](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/prompt-engineering.md) — 3 prompt elements (Context/Constraints/Format), 5 pro-tips (Role, Filter Bypass, Memory Clear, Anti-Agree, Source Unlock), AEO prompt templates
+- [AEO Writing Framework](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-writing-framework.md) — A.Q.C.E. formula (Answer/Qualify/Cover/Extend), semantic HTML requirements, Information Gain check, quality checklist
+- [AEO FAQ Framework](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/aeo-faq-framework.md) — 5 FAQ rules, 4-sentence template (Declarative/Clarification/Guardrail/Brand), hallucination-proof topic discovery
+- [GEO Tactical Strategies](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/geo-tactical-strategies.md) — Snippable content, E.E.A.T. upfront, schema markup templates, multi-platform authority, AI bot indexing, content freshness
 
 ## Next Best Skill
 
-- **Primary**: [geo-content-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — execute tactical GEO optimization on content identified by the AEO audit.
-- **Secondary**: [first-sentence-engine](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/first-sentence-engine/SKILL.md) — restructure content openings for answer-first, passage-level extraction.
-- **For brand entity issues**: [entity-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — resolve AI entity recognition and disambiguation.
+- **Primary**: [geo-content-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — execute tactical GEO optimization on content identified by the AEO audit.
+- **Secondary**: [first-sentence-engine](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/first-sentence-engine/SKILL.md) — restructure content openings for answer-first, passage-level extraction.
+- **For brand entity issues**: [entity-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — resolve AI entity recognition and disambiguation.

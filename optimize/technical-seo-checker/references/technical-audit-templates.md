@@ -1,6 +1,6 @@
 # Technical SEO Checker — Output Templates
 
-Detailed output templates for technical-seo-checker steps 1-9. Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md).
+Detailed output templates for technical-seo-checker steps 1-9. Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md).
 
 ---
 
@@ -299,7 +299,7 @@ Sitemap: https://example.com/sitemap.xml
 
 ## Step 7: Audit Structured Data
 
-> **CORE-EEAT alignment**: Schema markup quality maps to O05 (Schema Markup) in the CORE-EEAT benchmark. See [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) for full content quality audit.
+> **CORE-EEAT alignment**: Schema markup quality maps to O05 (Schema Markup) in the CORE-EEAT benchmark. See [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) for full content quality audit.
 
 ```markdown
 ## Structured Data Analysis

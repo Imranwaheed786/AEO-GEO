@@ -41,7 +41,7 @@ Before writing, you must have a complete brief containing:
 - **Competitor USPs**: What AI-valued differentiators must you match or exceed?
 - **Customer Language**: Tone, vocabulary, emotional register from real user threads
 
-> This brief comes from the Master Prompt (see [content-creation-protocol.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md)).
+> This brief comes from the Master Prompt (see [content-creation-protocol.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/content-creation-protocol.md)).
 
 ### Step 2: Write Using the A.Q.C.E. Formula
 

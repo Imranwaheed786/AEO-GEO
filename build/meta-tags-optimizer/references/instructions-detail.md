@@ -111,11 +111,11 @@ Full workflow templates, title formulas, meta description requirements, CORE-EEA
 
 Generate OG tags (og:type, og:url, og:title, og:description, og:image), Twitter Card tags, canonical URL, robots, viewport, author, and article-specific tags. Then combine into a complete meta tag block.
 
-> **Reference**: See [references/meta-tag-code-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) for OG type selection guide, Twitter card type selection, all HTML code templates, and the complete meta tag block template.
+> **Reference**: See [references/meta-tag-code-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) for OG type selection guide, Twitter card type selection, all HTML code templates, and the complete meta tag block template.
 
 ### 5. CORE-EEAT Alignment Check
 
-Verify meta tags align with content quality standards. Reference: [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+Verify meta tags align with content quality standards. Reference: [CORE-EEAT Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
 
 ```markdown
 ### CORE-EEAT Meta Tag Alignment
@@ -189,7 +189,7 @@ Test these variations:
 **Keyword**: Included naturally
 **CTA**: "Start podcasting today!"
 
-_Complete meta tag block (with OG, Twitter, Article tags) generated using template from [references/meta-tag-code-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md)._
+_Complete meta tag block (with OG, Twitter, Article tags) generated using template from [references/meta-tag-code-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md)._
 
 ### A/B Test Variations
 

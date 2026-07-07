@@ -51,7 +51,7 @@ When assessing competitors for AEO, do not lump them into one group. Categorize 
 1. List all queries where Mid Orbit competitors are cited by AI
 2. Identify which queries they cover superficially or generically
 3. Create deeper, more contextual content for those same queries
-4. Ensure your content passes all 3 Retrieval Filters (see [llm-ranking-mechanics.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md))
+4. Ensure your content passes all 3 Retrieval Filters (see [llm-ranking-mechanics.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md))
 5. Build consensus across platforms to match their third-party presence
 
 ### Orbit 3: Outer Orbit (Lucky Competitors / Empty Water)

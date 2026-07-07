@@ -5,8 +5,8 @@ Guidelines for AI agents working in this repository.
 ## Repository Overview
 
 - **Name**: seo-geo-claude-skills
-- **Repository**: https://github.com/aaron-he-zhu/seo-geo-claude-skills
-- **Author**: Aaron He Zhu
+- **Repository**: https://github.com/Imranwaheed786/seo-geo-claude-skills
+- **Author**: Imran Waheed
 - **License**: Apache 2.0
 - **Skills Specification**: [Agent Skills](https://agentskills.io/specification.md)
 
@@ -94,7 +94,7 @@ This library uses prompt-based hooks to automate cross-skill coordination. All h
 
 ### Temperature Memory Model
 
-The library uses a three-tier memory model. See [references/state-model.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) for full specification.
+The library uses a three-tier memory model. See [references/state-model.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) for full specification.
 
 | Tier | Location | Capacity | Lifecycle |
 |------|----------|----------|-----------|
@@ -108,8 +108,8 @@ All skills are compatible with three skill ecosystems:
 
 | Ecosystem | Spec | Install |
 |-----------|------|---------|
-| **ClawHub** | [openclaw/clawhub skill-format.md](https://github.com/openclaw/clawhub/blob/main/docs/skill-format.md) | `clawhub install aaron-he-zhu/<skill-name>` — [browse all 20](https://clawhub.ai/u/aaron-he-zhu) |
-| **Agent Skills** | [agentskills.io/specification.md](https://agentskills.io/specification.md) | `npx skills add aaron-he-zhu/seo-geo-claude-skills` |
+| **ClawHub** | [openclaw/clawhub skill-format.md](https://github.com/openclaw/clawhub/blob/main/docs/skill-format.md) | `clawhub install Imranwaheed786/<skill-name>` — [browse all 20](https://clawhub.ai/u/Imranwaheed786) |
+| **Agent Skills** | [agentskills.io/specification.md](https://agentskills.io/specification.md) | `npx skills add Imranwaheed786/seo-geo-claude-skills` |
 | **Vercel Labs skills** | [vercel-labs/skills find-skills](https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md) | `npx skills find seo` |
 
 ### Required Frontmatter
@@ -180,7 +180,7 @@ Two proprietary frameworks power this library's auditing skills:
 
 Used by: content-quality-auditor, seo-content-writer, geo-content-optimizer, content-refresher, on-page-seo-auditor
 
-Full reference: [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+Full reference: [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
 
 ### CITE (40 items, 4 dimensions)
 - **C**itation (10 items) — backlink profiles, media mentions
@@ -190,7 +190,7 @@ Full reference: [references/core-eeat-benchmark.md](https://github.com/aaron-he-
 
 Used by: domain-authority-auditor, backlink-analyzer, competitor-analysis, performance-reporter
 
-Full reference: [references/cite-domain-rating.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
+Full reference: [references/cite-domain-rating.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
 
 ### Veto System
 Both frameworks include critical items that can override the overall score:
@@ -199,7 +199,7 @@ Both frameworks include critical items that can override the overall score:
 
 ## Tool Connector Pattern
 
-Skills use `~~category` placeholders instead of specific tool names. See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for the full mapping.
+Skills use `~~category` placeholders instead of specific tool names. See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for the full mapping.
 
 ### Progressive Enhancement
 | Tier | Integration | Experience |
@@ -214,32 +214,32 @@ Every skill works at Tier 1. Tool integration enhances but never gates functiona
 
 | Your tool | Install command |
 |-----------|----------------|
-| **Claude Code** | `/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills` |
-| **OpenClaw** | `clawhub install aaron-he-zhu/<skill>` · [bundle](https://clawhub.ai/plugins/aaron-seo-geo) |
-| **Gemini CLI** | `gemini extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills` |
-| **Qwen Code** | `qwen extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills` |
-| **Amp** | `amp skill add aaron-he-zhu/seo-geo-claude-skills` |
-| **Kimi Code CLI** | `kimi plugin install https://github.com/aaron-he-zhu/seo-geo-claude-skills.git` |
-| **CodeBuddy** | in-app: `/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills` then `/plugin install aaron-seo-geo` |
-| **Cursor / Codex / opencode / Windsurf / Cline / Copilot / [35+ more](https://github.com/vercel-labs/skills#supported-agents)** | `npx skills add aaron-he-zhu/seo-geo-claude-skills` |
+| **Claude Code** | `/plugin marketplace add Imranwaheed786/seo-geo-claude-skills` |
+| **OpenClaw** | `clawhub install Imranwaheed786/<skill>` · [bundle](https://clawhub.ai/plugins/aaron-seo-geo) |
+| **Gemini CLI** | `gemini extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills` |
+| **Qwen Code** | `qwen extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills` |
+| **Amp** | `amp skill add Imranwaheed786/seo-geo-claude-skills` |
+| **Kimi Code CLI** | `kimi plugin install https://github.com/Imranwaheed786/seo-geo-claude-skills.git` |
+| **CodeBuddy** | in-app: `/plugin marketplace add Imranwaheed786/seo-geo-claude-skills` then `/plugin install aaron-seo-geo` |
+| **Cursor / Codex / opencode / Windsurf / Cline / Copilot / [35+ more](https://github.com/vercel-labs/skills#supported-agents)** | `npx skills add Imranwaheed786/seo-geo-claude-skills` |
 
 **Git Submodule** (version-pinned):
 ```bash
-git submodule add https://github.com/aaron-he-zhu/seo-geo-claude-skills.git .claude/skills/seo-geo
+git submodule add https://github.com/Imranwaheed786/seo-geo-claude-skills.git .claude/skills/seo-geo
 ```
 
 ## Checking for Updates
 
 Once per session, agents should check for updates:
 
-1. Fetch `https://raw.githubusercontent.com/aaron-he-zhu/seo-geo-claude-skills/main/VERSIONS.md`
+1. Fetch `https://raw.githubusercontent.com/Imranwaheed786/seo-geo-claude-skills/main/VERSIONS.md`
 2. Compare remote versions against locally installed skill metadata versions
 3. If 2+ skills have updates OR any skill has a major version bump, notify the user:
 
 ```
 SEO & GEO Skills update available: [list updated skills with old → new versions]
-- OpenClaw: clawhub install aaron-he-zhu/<skill-name>  (for each updated skill)
-- Other agents: npx skills add aaron-he-zhu/seo-geo-claude-skills
+- OpenClaw: clawhub install Imranwaheed786/<skill-name>  (for each updated skill)
+- Other agents: npx skills add Imranwaheed786/seo-geo-claude-skills
 ```
 
 4. Do not block the user's workflow for update checks. Notify non-intrusively.
@@ -261,7 +261,7 @@ When one skill points to its `Next Best Skill`, preserve this context:
 | Priority items | List specific item IDs |
 | Content URL | Include for fetch-capable skills |
 
-If `memory-management` is active, prior audit results are automatically available via the hot cache in [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md).
+If `memory-management` is active, prior audit results are automatically available via the hot cache in [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md).
 
 ## Git Workflow
 

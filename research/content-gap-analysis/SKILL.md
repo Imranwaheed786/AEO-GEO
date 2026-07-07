@@ -4,11 +4,11 @@ description: 'Find content gaps: topics and keywords competitors cover that you 
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when finding content gaps between two domains, discovering missing topics, or identifying coverage holes versus competitors."
 argument-hint: "<your domain> <competitor domain>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "medium"
   tags:
@@ -69,8 +69,8 @@ metadata:
 # Content Gap Analysis
 
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This research skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This research skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 Identifies content opportunities by analyzing gaps between a site's content and competitors'. Surfaces missing topics, untapped keywords, and content formats worth creating.
@@ -101,7 +101,7 @@ Use this when the conversation involves reusable market intelligence that should
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Basic Gap Analysis
 
@@ -133,14 +133,14 @@ What content gaps exist for [audience segment] in my niche?
 
 **Expected output**: a prioritized research brief, evidence-backed findings, and a short handoff summary ready for `memory/research/`.
 
-- **Reads**: user goals, target market inputs, available tool data, and prior strategy from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: user goals, target market inputs, available tool data, and prior strategy from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing research deliverable plus a reusable summary that can be stored under `memory/research/`.
 - **Promotes**: durable keyword priorities, competitor facts, entity candidates, and strategic decisions to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/research/`; hand canonical entity work to `entity-optimizer`.
 - **Next handoff**: use the `Next Best Skill` below when the findings are ready to drive action.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -153,7 +153,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 > **Note:** All integrations are optional. This skill works without any API keys — users provide data manually when no tools are connected.
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~SEO tool + ~~search console + ~~analytics + ~~AI monitor connected:**
 Automatically pull your site's content inventory from ~~search console and ~~analytics (indexed pages, traffic per page, keywords ranking), competitor content data from ~~SEO tool (ranking keywords, top pages, backlink counts), and AI citation patterns from ~~AI monitor. Keyword overlap analysis and gap identification can be automated.
@@ -219,7 +219,7 @@ When a user requests content gap analysis:
 
    Produce a final report with: Executive Summary, Prioritized Gap List (Tier 1 Quick Wins, Tier 2 Strategic Builds, Tier 3 Long-term), Content Calendar, and Success Metrics.
 
-   > **Reference**: See [references/analysis-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/analysis-templates.md) for detailed templates for each step.
+   > **Reference**: See [references/analysis-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/analysis-templates.md) for detailed templates for each step.
 
 ## Validation Checkpoints
 
@@ -238,7 +238,7 @@ When a user requests content gap analysis:
 
 ## Example
 
-> **Reference**: See [references/example-report.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/example-report.md) for a complete example analyzing SaaS marketing blog gaps vs. HubSpot and Drift.
+> **Reference**: See [references/example-report.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/example-report.md) for a complete example analyzing SaaS marketing blog gaps vs. HubSpot and Drift.
 
 ## Advanced Analysis
 
@@ -287,10 +287,10 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Analysis Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/analysis-templates.md) — Detailed templates for each analysis step (inventory, competitor content, keyword gaps, topic gaps, format gaps, GEO gaps, journey, prioritized report)
-- [Gap Analysis Frameworks](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/gap-analysis-frameworks.md) — Content audit matrices, funnel mapping, and gap prioritization scoring methodologies
-- [Example Report](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/example-report.md) — Complete example analyzing SaaS marketing blog gaps vs. HubSpot and Drift
+- [Analysis Templates](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/analysis-templates.md) — Detailed templates for each analysis step (inventory, competitor content, keyword gaps, topic gaps, format gaps, GEO gaps, journey, prioritized report)
+- [Gap Analysis Frameworks](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/gap-analysis-frameworks.md) — Content audit matrices, funnel mapping, and gap prioritization scoring methodologies
+- [Example Report](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/research/content-gap-analysis/references/example-report.md) — Complete example analyzing SaaS marketing blog gaps vs. HubSpot and Drift
 
 ## Next Best Skill
 
-- **Primary**: [seo-content-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — turn missing topics into a draft or content roadmap.
+- **Primary**: [seo-content-writer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — turn missing topics into a draft or content roadmap.

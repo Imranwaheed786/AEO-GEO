@@ -1,6 +1,6 @@
 # Content Refresh Templates
 
-Detailed output templates for content-refresher steps 2-9. Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md).
+Detailed output templates for content-refresher steps 2-9. Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md).
 
 ---
 

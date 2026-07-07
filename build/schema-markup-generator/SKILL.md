@@ -4,12 +4,12 @@ description: 'Generate JSON-LD structured data for FAQ, HowTo, Article, Product,
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when generating JSON-LD structured data, Schema.org markup, or rich snippet markup for a page."
 argument-hint: "<page URL or content type>"
 allowed-tools: WebFetch
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "medium"
   tags:
@@ -84,8 +84,8 @@ metadata:
 
 # Schema Markup Generator
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill creates Schema.org structured data markup in JSON-LD format to help search engines understand your content and enable rich results in SERPs.
@@ -116,7 +116,7 @@ Use this when the conversation involves a shippable asset or transformation that
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Generate Schema for Content
 
@@ -148,14 +148,14 @@ Review and improve this schema markup: [existing schema]
 
 **Expected output**: a ready-to-use asset or implementation-ready transformation plus a short handoff summary ready for `memory/content/`.
 
-- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing content, metadata, or schema deliverable plus a reusable summary that can be stored under `memory/content/`.
 - **Promotes**: approved angles, messaging choices, missing evidence, and publish blockers to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the asset is ready for review or deployment.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -166,7 +166,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~web crawler connected:**
 Automatically crawl and extract page content (visible text, headings, lists, tables), existing schema markup, page metadata, and structured content elements that map to schema properties.
@@ -190,7 +190,7 @@ When a user requests schema markup, run these three steps:
 2. **Generate Schema Markup** — output JSON-LD for chosen types (FAQPage, HowTo, Article/BlogPosting/NewsArticle, Product, LocalBusiness, Organization, BreadcrumbList, Event, Recipe, or multi-type arrays); include all required properties, rich result preview, and required-vs-optional notes
 3. **Provide Implementation and Validation** — show placement options (in `<head>` or before `</body>`), validation steps (~~schema validator, Schema.org Validator, ~~search console), and validation checklist
 
-> **Reference**: See [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md) for the CORE-EEAT content-to-schema mapping table, rich result eligibility matrix, full implementation guide, validation checklist, FAQ example, schema type quick reference, and tips. See [references/schema-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) for copy-ready JSON-LD templates.
+> **Reference**: See [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md) for the CORE-EEAT content-to-schema mapping table, rich result eligibility matrix, full implementation guide, validation checklist, FAQ example, schema type quick reference, and tips. See [references/schema-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) for copy-ready JSON-LD templates.
 
 ## Validation Checkpoints
 
@@ -216,19 +216,19 @@ When a user requests schema markup, run these three steps:
 
 **Output** (abbreviated): a `FAQPage` JSON-LD block with `mainEntity` containing 3 `Question`/`Answer` pairs ("What is SEO?", "How long does SEO take to work?", "Is SEO better than paid advertising?"). Wrap in `<script type="application/ld+json">...</script>` in `<head>` or before `</body>`, then test with ~~schema validator.
 
-See the full JSON-LD + SERP preview in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#example-faq-schema-for-seo-page).
+See the full JSON-LD + SERP preview in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#example-faq-schema-for-seo-page).
 
 ## Schema Type Quick Reference
 
-Blog Post→BlogPosting/Article; Product→Product; FAQ→FAQPage; How-To→HowTo; Local Business→LocalBusiness; Recipe→Recipe; Event→Event; Video→VideoObject; Course→Course; Review→Review. See the full property map in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#schema-type-quick-reference).
+Blog Post→BlogPosting/Article; Product→Product; FAQ→FAQPage; How-To→HowTo; Local Business→LocalBusiness; Recipe→Recipe; Event→Event; Video→VideoObject; Course→Course; Review→Review. See the full property map in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#schema-type-quick-reference).
 
 ## Tips for Success
 
-Match visible content; don't spam; keep updated; test thoroughly; monitor Search Console. Full list in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#tips-for-success).
+Match visible content; don't spam; keep updated; test thoroughly; monitor Search Console. Full list in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md#tips-for-success).
 
 ## Schema Type Decision Tree
 
-> **Reference**: See [references/schema-decision-tree.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-decision-tree.md) for the full decision tree (content-to-schema mapping), industry-specific recommendations, implementation priority tiers (P0-P4), and validation quick reference.
+> **Reference**: See [references/schema-decision-tree.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-decision-tree.md) for the full decision tree (content-to-schema mapping), industry-specific recommendations, implementation priority tiers (P0-P4), and validation quick reference.
 
 
 ### Save Results
@@ -249,11 +249,11 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md) - Full 3-step workflow, CORE-EEAT schema mapping, implementation guide, FAQ example, schema quick reference, tips
-- [Schema Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) - Copy-ready JSON-LD templates for all schema types
-- [Schema Decision Tree](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-decision-tree.md) - Content-to-schema mapping, industry recommendations, priority tiers
-- [Validation Guide](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/validation-guide.md) - Common errors, required properties, testing workflow
+- [Instructions Detail](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/instructions-detail.md) - Full 3-step workflow, CORE-EEAT schema mapping, implementation guide, FAQ example, schema quick reference, tips
+- [Schema Templates](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) - Copy-ready JSON-LD templates for all schema types
+- [Schema Decision Tree](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-decision-tree.md) - Content-to-schema mapping, industry recommendations, priority tiers
+- [Validation Guide](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/validation-guide.md) - Common errors, required properties, testing workflow
 
 ## Next Best Skill
 
-- **Primary**: [technical-seo-checker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md) — verify implementation quality and deployment readiness.
+- **Primary**: [technical-seo-checker](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md) — verify implementation quality and deployment readiness.

@@ -3,7 +3,7 @@
 - **Date**: 2026-04-11
 - **Status**: Accepted
 - **Ships in**: v7.1.0
-- **Authors**: aaron-he-zhu + 10-reviewer agent panel (Rounds 1 and 2)
+- **Authors**: Imranwaheed786 + 10-reviewer agent panel (Rounds 1 and 2)
 
 ## Context
 

@@ -4,11 +4,11 @@ description: 'Write SEO blog posts, articles, landing pages with keyword integra
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when writing SEO-optimized articles, blog posts, landing pages, or product descriptions. Also when the user asks to create content targeting a specific keyword."
 argument-hint: "<topic> <target keyword>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "medium"
   tags:
@@ -89,8 +89,8 @@ metadata:
 
 # SEO Content Writer
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill creates search-engine-optimized content that ranks well while providing genuine value to readers. It applies proven SEO copywriting techniques, proper keyword integration, and optimal content structure.
@@ -121,7 +121,7 @@ Use this when the conversation involves a shippable asset or transformation that
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Basic Content Creation
 
@@ -150,14 +150,14 @@ Here's my content brief: [brief]. Write SEO-optimized content following this out
 
 **Expected output**: a ready-to-use asset or implementation-ready transformation plus a short handoff summary ready for `memory/content/`.
 
-- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing content, metadata, or schema deliverable plus a reusable summary that can be stored under `memory/content/`.
 - **Promotes**: approved angles, messaging choices, missing evidence, and publish blockers to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the asset is ready for review or deployment.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -168,7 +168,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~SEO tool + ~~search console connected:**
 Automatically pull keyword metrics (search volume, difficulty, CPC), competitor content analysis (top-ranking pages, content length, common topics), SERP features (featured snippets, PAA questions), and keyword opportunities (related keywords, question-based queries).
@@ -196,7 +196,7 @@ When a user requests SEO content, run these nine steps in order:
 8. **Add Internal/External Links** — 2-5 internal, 2-3 authoritative external
 9. **Final SEO Review and CORE-EEAT Self-Check** — Score against 10 SEO factors and verify 16 CORE-EEAT constraints; classify issues (auto-correct vs. needs-decision)
 
-> **Reference**: See [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) for the full step-by-step templates, CORE-EEAT constraint table, issue classification rules, and Changes Made block format.
+> **Reference**: See [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) for the full step-by-step templates, CORE-EEAT constraint table, issue classification rules, and Changes Made block format.
 
 ## Validation Checkpoints
 
@@ -207,7 +207,7 @@ When a user requests SEO content, run these nine steps in order:
 - [ ] Competitor URLs reviewed or target SERP features identified
 
 ### Output Validation
-- [ ] **Banned-vocab self-check** — before finalizing, scan the draft for: `crucial, robust, leverage, delve, nuanced, multifaceted, furthermore, moreover, pivotal, tapestry, foster, showcase, intricate, vibrant, cutting-edge, harness, elevate, empower, streamline, synergy, holistic, seamless, seamlessly, realm, paramount, myriad`. Also banned phrases: `In today's digital landscape`, `It is important to note`, `It's worth noting that`, `Let's dive in`, `Without further ado`, `At the end of the day`. Replace any hit with a concrete alternative per [skill-contract.md §Output Voice](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+- [ ] **Banned-vocab self-check** — before finalizing, scan the draft for: `crucial, robust, leverage, delve, nuanced, multifaceted, furthermore, moreover, pivotal, tapestry, foster, showcase, intricate, vibrant, cutting-edge, harness, elevate, empower, streamline, synergy, holistic, seamless, seamlessly, realm, paramount, myriad`. Also banned phrases: `In today's digital landscape`, `It is important to note`, `It's worth noting that`, `Let's dive in`, `Without further ado`, `At the end of the day`. Replace any hit with a concrete alternative per [skill-contract.md §Output Voice](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 - [ ] Keyword density within 1-2% for primary keyword (Note: Keyword density is a guideline, not a hard rule. Modern search engines prioritize semantic relevance and natural language over exact density targets. Focus on covering the topic comprehensively with semantic variants rather than hitting a specific percentage.)
 - [ ] All sections from outline covered completely
 - [ ] Internal links included (2-5 relevant links)
@@ -224,15 +224,15 @@ When a user requests SEO content, run these nine steps in order:
 - Meta description: `Get 12 proven email marketing tactics that lift open rates 34% for small businesses. DMA-backed data, real subject-line examples, and a 30-day playbook.` (~156 chars, CTA implied, stat hook)
 - Structure: H2 for each of 12 tactics, bullet lists, comparison table (Mailchimp vs Brevo vs ConvertKit), 6-question FAQ (40-60 word answers for featured snippets), CTA conclusion.
 
-> **Reference**: See [references/seo-writing-checklist.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) for the full article with statistics citations, H1/H2/H3 hierarchy, and FAQ section.
+> **Reference**: See [references/seo-writing-checklist.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) for the full article with statistics citations, H1/H2/H3 hierarchy, and FAQ section.
 
 ## Content Type Templates
 
-Quick-start prompts: How-to guide, Comparison article, Listicle, Ultimate guide. See [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md#content-type-templates) for all 4 templates.
+Quick-start prompts: How-to guide, Comparison article, Listicle, Ultimate guide. See [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md#content-type-templates) for all 4 templates.
 
 ## Tips for Success
 
-Match intent, front-load value, use data, write for humans first, include visuals, update regularly. Full list in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md#tips-for-success).
+Match intent, front-load value, use data, write for humans first, include visuals, update regularly. Full list in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md#tips-for-success).
 
 
 ### Save Results
@@ -253,11 +253,11 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) - Full step-by-step workflow, CORE-EEAT constraints, issue classification, content type templates, tips
-- [SEO Writing Checklist](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) - On-page SEO checklist, writing template, featured snippet patterns, full example
-- [Title Formulas](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/title-formulas.md) - Proven headline formulas, power words, CTR patterns
-- [Content Structure Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/content-structure-templates.md) - Templates for blog posts, comparisons, listicles, how-tos, pillar pages
+- [Instructions Detail](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) - Full step-by-step workflow, CORE-EEAT constraints, issue classification, content type templates, tips
+- [SEO Writing Checklist](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) - On-page SEO checklist, writing template, featured snippet patterns, full example
+- [Title Formulas](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/title-formulas.md) - Proven headline formulas, power words, CTR patterns
+- [Content Structure Templates](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/content-structure-templates.md) - Templates for blog posts, comparisons, listicles, how-tos, pillar pages
 
 ## Next Best Skill
 
-- **Primary**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing or handing it off.
+- **Primary**: [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing or handing it off.

@@ -1,6 +1,6 @@
 # LLM Crawler Handling (GPTBot / ClaudeBot / PerplexityBot / etc.)
 
-Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md). Use during technical audits to decide whether (and how) to allow AI-engine crawlers. As of 2026, this is a required technical-SEO decision, not an optional one.
+Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md). Use during technical audits to decide whether (and how) to allow AI-engine crawlers. As of 2026, this is a required technical-SEO decision, not an optional one.
 
 ---
 
@@ -253,5 +253,5 @@ When the technical audit covers LLM crawler handling, include in the handoff:
 
 ## See also
 
-- [geo-content-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — downstream skill that depends on AI engines actually seeing your content
-- [entity-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — blocking retrieval bots breaks AI entity recognition
+- [geo-content-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) — downstream skill that depends on AI engines actually seeing your content
+- [entity-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — blocking retrieval bots breaks AI entity recognition

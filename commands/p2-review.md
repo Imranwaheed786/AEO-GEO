@@ -15,9 +15,9 @@ parameters:
 
 # P2 Review
 
-> Evaluates v7.1.0 **P2 observation items** against their binary trigger conditions, reports status, and makes a recommendation for v7.3.0. Part of the [SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills).
+> Evaluates v7.1.0 **P2 observation items** against their binary trigger conditions, reports status, and makes a recommendation for v7.3.0. Part of the [SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills).
 
-**Ownership**: this command is the designated runner for the 2026-07-10 tombstone review tied to [ADR-001](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md). Without it, "auto-close" is aspirational.
+**Ownership**: this command is the designated runner for the 2026-07-10 tombstone review tied to [ADR-001](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md). Without it, "auto-close" is aspirational.
 
 **Scheduled trigger**: the SessionStart hook in `hooks/hooks.json` reminds the user to run this command if the current date is ≥ 2026-07-10 AND `memory/p2-review-2026-07.md` does not yet exist.
 
@@ -31,7 +31,7 @@ Scans `memory/audits/YYYY-MM*.md` files for evidence that each P2 observation it
 
 | Item | Binary trigger | Data source |
 |---|---|---|
-| **Gap Typology field** | 3+ handoffs in `memory/audits/` with explicit `audit_gap_types: [missing, ...]` annotation from a downstream writer/refresher skill (per [examples.md §Auditor Handoff Archive Block Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md)) | `memory/audits/*.md` |
+| **Gap Typology field** | 3+ handoffs in `memory/audits/` with explicit `audit_gap_types: [missing, ...]` annotation from a downstream writer/refresher skill (per [examples.md §Auditor Handoff Archive Block Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/references/examples.md)) | `memory/audits/*.md` |
 | **40-tier cap number** | 30+ audits in `memory/audits/` with 2+ veto fails (BLOCKED status) | `memory/audits/*.md` |
 | **Failure Modes Catalog** (single shared file) | 5+ audits in `memory/audits/` with `false_positive: true` user annotation | `memory/audits/*.md` |
 | **Adversarial Pass** (alternative to removed Blind Pass) | Named user feedback: "audits feel mechanical" or equivalent | feedback channel, manual |
@@ -114,7 +114,7 @@ Report written to `memory/p2-review-YYYY-MM.md` (runtime location, survives acro
 
 ## Related
 
-- [ADR-001: Inline Auditor Runbook](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — defines the P2 items and tombstone rule
-- [references/auditor-runbook.md §2](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — 2+ veto BLOCKED behavior pending 40-tier calibration
-- [references/contract-fail-caps.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md) — sunset clause for the 40-tier number
-- [cross-cutting/memory-management/SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) — archives handoffs to `memory/audits/` enabling this review's data source
+- [ADR-001: Inline Auditor Runbook](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — defines the P2 items and tombstone rule
+- [references/auditor-runbook.md §2](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — 2+ veto BLOCKED behavior pending 40-tier calibration
+- [references/contract-fail-caps.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md) — sunset clause for the 40-tier number
+- [cross-cutting/memory-management/SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md) — archives handoffs to `memory/audits/` enabling this review's data source

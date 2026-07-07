@@ -2,13 +2,13 @@
 
 **20개 스킬. 15개 명령. 검색 순위 + AI 인용을 한번에.**
 
-[![GitHub Stars](https://img.shields.io/github/stars/aaron-he-zhu/seo-geo-claude-skills?style=flat)](https://github.com/aaron-he-zhu/seo-geo-claude-skills)
-[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md)
-[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Imranwaheed786/seo-geo-claude-skills?style=flat)](https://github.com/Imranwaheed786/seo-geo-claude-skills)
+[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/VERSIONS.md)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/LICENSE)
 
 [English](../README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | **한국어** | [Español](README.es.md) | [Português](README.pt.md)
 
-검색 엔진 최적화(SEO)와 생성형 엔진 최적화(GEO)를 위한 Claude 스킬 및 명령 세트. 의존성 제로. [Claude Code](https://claude.ai/download), [OpenClaw](https://openclaw.com), [Gemini CLI](https://geminicli.com), [Qwen Code](https://qwenlm.github.io/qwen-code-docs/), [Amp](https://ampcode.com), [Kimi](https://moonshotai.github.io/kimi-cli/), [CodeBuddy](https://codebuddy.ai) 네이티브 지원. [35개 이상의 에이전트](https://github.com/vercel-labs/skills#supported-agents)는 `npx skills`로. 콘텐츠 품질은 [CORE-EEAT 벤치마크](https://github.com/aaron-he-zhu/core-eeat-content-benchmark)(80개 항목), 도메인 권위는 [CITE 도메인 등급](https://github.com/aaron-he-zhu/cite-domain-rating)(40개 항목)으로 평가.
+검색 엔진 최적화(SEO)와 생성형 엔진 최적화(GEO)를 위한 Claude 스킬 및 명령 세트. 의존성 제로. [Claude Code](https://claude.ai/download), [OpenClaw](https://openclaw.com), [Gemini CLI](https://geminicli.com), [Qwen Code](https://qwenlm.github.io/qwen-code-docs/), [Amp](https://ampcode.com), [Kimi](https://moonshotai.github.io/kimi-cli/), [CodeBuddy](https://codebuddy.ai) 네이티브 지원. [35개 이상의 에이전트](https://github.com/vercel-labs/skills#supported-agents)는 `npx skills`로. 콘텐츠 품질은 [CORE-EEAT 벤치마크](https://github.com/Imranwaheed786/core-eeat-content-benchmark)(80개 항목), 도메인 권위는 [CITE 도메인 등급](https://github.com/Imranwaheed786/cite-domain-rating)(40개 항목)으로 평가.
 
 > **SEO**는 검색 결과에서 순위를 올립니다. **GEO**는 AI 시스템(ChatGPT, Perplexity, Google AI Overviews)에서 인용됩니다. 이 라이브러리는 둘 다 다룹니다.
 
@@ -26,32 +26,32 @@
 
 ```bash
 # Claude Code
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 
 # OpenClaw / ClawHub
-clawhub install aaron-he-zhu/<skill>
+clawhub install Imranwaheed786/<skill>
 
 # Gemini CLI
-gemini extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+gemini extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Qwen Code
-qwen extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+qwen extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Amp
-amp skill add aaron-he-zhu/seo-geo-claude-skills
+amp skill add Imranwaheed786/seo-geo-claude-skills
 
 # Kimi Code CLI
-kimi plugin install https://github.com/aaron-he-zhu/seo-geo-claude-skills.git
+kimi plugin install https://github.com/Imranwaheed786/seo-geo-claude-skills.git
 
 # CodeBuddy (앱 내, 2단계)
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 /plugin install aaron-seo-geo
 
 # 범용 폴백 (Cursor, Codex, opencode, Windsurf, Copilot 등 35+ 에이전트)
-npx skills add aaron-he-zhu/seo-geo-claude-skills
+npx skills add Imranwaheed786/seo-geo-claude-skills
 
 # 단일 스킬만 설치
-npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research
+npx skills add Imranwaheed786/seo-geo-claude-skills -s keyword-research
 ```
 
 설치 후 바로 사용:
@@ -138,7 +138,7 @@ npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research
 
 ## 기여
 
-기여를 환영합니다! [CONTRIBUTING.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONTRIBUTING.md)를 참조하세요.
+기여를 환영합니다! [CONTRIBUTING.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONTRIBUTING.md)를 참조하세요.
 
 ## 라이선스
 

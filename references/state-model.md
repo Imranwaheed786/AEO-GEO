@@ -26,7 +26,7 @@ Plan C standardizes where reusable project state belongs. All state follows a th
 - Project isolation: `memory/wiki/<project>/index.md` partitioned by hot-cache `project` field; no `project` field = global index only
 - Auto-loaded: SessionStart loads the current project's `index.md` (skips silently if absent)
 - Auto-refreshed: PostToolUse silently updates `index.md` after any WARM file write (low risk — fully rebuildable)
-- **Sole writer**: `memory-management` owns all wiki writes semantically. For performance, two narrowly-scoped auto-refresh operations are delegated to PostToolUse and Stop hooks (updating `memory/wiki/index.md` and `memory/wiki/log.md`). These hooks act on behalf of `memory-management` and MUST use the schema documented in [memory-management SKILL.md §Wiki Layer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md). Any wiki-compiled page (entity/keyword/topic) still requires explicit `memory-management` invocation.
+- **Sole writer**: `memory-management` owns all wiki writes semantically. For performance, two narrowly-scoped auto-refresh operations are delegated to PostToolUse and Stop hooks (updating `memory/wiki/index.md` and `memory/wiki/log.md`). These hooks act on behalf of `memory-management` and MUST use the schema documented in [memory-management SKILL.md §Wiki Layer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/memory-management/SKILL.md). Any wiki-compiled page (entity/keyword/topic) still requires explicit `memory-management` invocation.
 - Rollback: delete `memory/wiki/` to return to pre-wiki behavior with zero side effects
 - Does not participate in promotion/demotion lifecycle
 - Index fields are split into **precise** (score, status, next_action, mtime — extracted directly) and **best-effort** (summary — LLM inferred)
@@ -72,7 +72,7 @@ Contradiction reconciliation (Phase 2): each resolution tagged `confidence: HIGH
 
 Terminal architecture (Phase 3): when wiki compiled pages fully cover a WARM category, those WARM files become retirement candidates. Use `wiki-lint --retire-preview` to list candidates (dry-run only). After user confirmation, retired WARM files move to COLD (`memory/archive/YYYY-MM-DD-filename.md`). The terminal model is HOT / WIKI / COLD — wiki absorbs WARM's role as the primary knowledge layer, with COLD holding raw source files.
 
-> Full specification: [proposal-wiki-layer-v3.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)
+> Full specification: [proposal-wiki-layer-v3.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)
 
 ### COLD — `memory/archive/`
 
@@ -257,4 +257,4 @@ When a skill describes state updates, it should:
 - `content-quality-auditor` owns publish-readiness state in `memory/audits/content/`
 - `domain-authority-auditor` owns citation-trust state in `memory/audits/domain/`
 
-See [skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the full protocol-layer vs execution-layer behavior matrix.
+See [skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the full protocol-layer vs execution-layer behavior matrix.

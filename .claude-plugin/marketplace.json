@@ -1,13 +1,13 @@
 {
   "name": "aaron-seo-geo",
   "owner": {
-    "name": "Aaron He Zhu",
-    "url": "https://github.com/aaron-he-zhu"
+    "name": "Imran Waheed",
+    "url": "https://github.com/Imranwaheed786"
   },
   "metadata": {
     "description": "SEO & GEO skill operating system with a shared contract, protocol-layer gates, and reusable state handoffs",
     "version": "9.0.1",
-    "repository": "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+    "repository": "https://github.com/Imranwaheed786/seo-geo-claude-skills"
   },
   "plugins": [
     {

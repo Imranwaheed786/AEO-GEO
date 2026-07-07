@@ -1,6 +1,6 @@
 # CORE-EEAT Content Benchmark — Skills Reference
 
-> Based on [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark) **v3.0**
+> Based on [CORE-EEAT Content Benchmark](https://github.com/Imranwaheed786/core-eeat-content-benchmark) **v3.0**
 >
 > This file is a reference adaptation for the SEO & GEO Skills Library. For the full benchmark with detailed examples, see the source repository.
 >
@@ -179,7 +179,7 @@
 
 ### Veto Items
 
-Failing any veto item activates the Critical Fail Cap. The cap arithmetic and thresholds are defined in [auditor-runbook.md §2](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Do not restate cap numbers here or elsewhere — this file owns the item definitions only.
+Failing any veto item activates the Critical Fail Cap. The cap arithmetic and thresholds are defined in [auditor-runbook.md §2](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Do not restate cap numbers here or elsewhere — this file owns the item definitions only.
 
 | Veto ID | Dimension | Check |
 |---------|-----------|-------|
@@ -187,9 +187,9 @@ Failing any veto item activates the Critical Fail Cap. The cap arithmetic and th
 | **C01** | Contextual Clarity | Clickbait — title promises something the page doesn't deliver |
 | **R10** | Referenceability | Data on the page contradicts itself |
 
-**Single veto fail**: cap applies per [Runbook §2 decision table](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md).
+**Single veto fail**: cap applies per [Runbook §2 decision table](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md).
 
-**2+ veto fails**: audit returns `status: BLOCKED` per [Runbook §2 Worked Example 3](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Calibration for a numeric multi-veto cap is pending v7.3, gated on 30+ real multi-veto audits in `memory/audits/`.
+**2+ veto fails**: audit returns `status: BLOCKED` per [Runbook §2 Worked Example 3](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Calibration for a numeric multi-veto cap is pending v7.3, gated on 30+ real multi-veto audits in `memory/audits/`.
 
 Rationale: prevents "79 items pass + 1 veto fails" from producing a misleadingly high overall score.
 
@@ -650,7 +650,7 @@ Affiliate-link disclosure is enforceable only when ALL of the following sub-crit
 
 **Partial**: Page contains no affiliate links (N/A — score as Partial, not Pass, because the control cannot be verified in the positive sense).
 
-**Fail**: Any affiliate link exists on the page and any one of (a)–(e) is missing → **VETO** per [§Veto Items](#veto-items). Cap rule applies per [auditor-runbook.md §2](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Also surface in the handoff `key_findings` with severity `veto` and cite the specific sub-item that failed (e.g., "T04(a): disclosure placed in footer only, below first affiliate link").
+**Fail**: Any affiliate link exists on the page and any one of (a)–(e) is missing → **VETO** per [§Veto Items](#veto-items). Cap rule applies per [auditor-runbook.md §2](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Also surface in the handoff `key_findings` with severity `veto` and cite the specific sub-item that failed (e.g., "T04(a): disclosure placed in footer only, below first affiliate link").
 
 **T05: Editorial Policy** | SEO 🔍
 - **Pass**: Content standards and review process published.

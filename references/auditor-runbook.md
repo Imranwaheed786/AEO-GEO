@@ -7,17 +7,17 @@
 > **Next scheduled review**: 2026-07-10 (tied to P2 trigger evaluation)
 
 This file is the single source of truth for auditor-class skill output behavior. It is inlined into:
-- [cross-cutting/content-quality-auditor/SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)
-- [cross-cutting/domain-authority-auditor/SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md)
+- [cross-cutting/content-quality-auditor/SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md)
+- [cross-cutting/domain-authority-auditor/SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md)
 
-Drift detection: `/seo:contract-lint` validates inlined copies against this file via **two** sha256 hashes carried in sync markers: `source_sha256` over the whole Runbook file, and `block_sha256` over the inlined §1-5 content. Either hash mismatch is a drift event. Manual edits to inlined copies are forbidden — edit this source file and re-run the sync procedure (see [AUDITOR-AUTHORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md)).
+Drift detection: `/seo:contract-lint` validates inlined copies against this file via **two** sha256 hashes carried in sync markers: `source_sha256` over the whole Runbook file, and `block_sha256` over the inlined §1-5 content. Either hash mismatch is a drift event. Manual edits to inlined copies are forbidden — edit this source file and re-run the sync procedure (see [AUDITOR-AUTHORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md)).
 
 ## Ownership Routing (read this before asking "which file owns what")
 
-- **Auditor item definitions** (veto IDs, dimension structure) → [core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) for CORE-EEAT, [cite-domain-rating.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) for CITE
-- **Cap numbers** (the literal "60" and future "40") → [contract-fail-caps.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md) (v7.2.0); until that file ships, numbers live here in §2
+- **Auditor item definitions** (veto IDs, dimension structure) → [core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) for CORE-EEAT, [cite-domain-rating.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) for CITE
+- **Cap numbers** (the literal "60" and future "40") → [contract-fail-caps.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/contract-fail-caps.md) (v7.2.0); until that file ships, numbers live here in §2
 - **Application arithmetic, handoff schema, translation rules** → this file (§1 through §6)
-- **General handoff format for all skills** → [skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md)
+- **General handoff format for all skills** → [skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md)
 
 Any restatement of a rule outside its owning file is a drift bug and will be flagged by `/seo:contract-lint`.
 
@@ -60,7 +60,7 @@ This prevents breakage when an audit produced before the upgrade is consumed by 
 
 ### Non-auditor skills
 
-Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
+Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) as-is. Cap-related fields do not apply. Non-auditors never emit `cap_applied` / `raw_overall_score` / `final_overall_score`, and MUST NOT use the `class: auditor-output` frontmatter marker.
 
 ---
 
@@ -71,8 +71,8 @@ Non-auditor skill handoffs follow [skill-contract.md §Handoff Summary Format](h
 **Rule summary**: when any veto item fails, cap the affected dimension and the overall score at **60/100**. Show raw and capped side by side in the internal report. Set `cap_applied: true` in handoff.
 
 **Veto items**:
-- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
-- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
+- CORE-EEAT: T04, C01, R10 — see [core-eeat-benchmark.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md)
+- CITE: T03, T05, T09 — see [cite-domain-rating.md §Veto Items](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md)
 
 ### Decision table
 
@@ -218,7 +218,7 @@ If any check fails, force `status: BLOCKED` with `open_loops: ["artifact_gate_fa
 
 ## §5 · User-Facing Translation Layer
 
-Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
+Before rendering to the user, translate internal language. This respects [skill-contract.md §Response Presentation Norms](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) which forbids internal jargon in user output.
 
 ### Forbidden in user-visible output
 

@@ -2,13 +2,13 @@
 
 **20 skills. 15 comandos. Posiciónate en buscadores. Sé citado por IA.**
 
-[![GitHub Stars](https://img.shields.io/github/stars/aaron-he-zhu/seo-geo-claude-skills?style=flat)](https://github.com/aaron-he-zhu/seo-geo-claude-skills)
-[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md)
-[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Imranwaheed786/seo-geo-claude-skills?style=flat)](https://github.com/Imranwaheed786/seo-geo-claude-skills)
+[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/VERSIONS.md)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/LICENSE)
 
 [English](../README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | **Español** | [Português](README.pt.md)
 
-Skills y comandos de Claude para Optimización de Motores de Búsqueda (SEO) y Optimización de Motores Generativos (GEO). Sin dependencias. Instalación nativa en [Claude Code](https://claude.ai/download), [OpenClaw](https://openclaw.com), [Gemini CLI](https://geminicli.com), [Qwen Code](https://qwenlm.github.io/qwen-code-docs/), [Amp](https://ampcode.com), [Kimi](https://moonshotai.github.io/kimi-cli/), [CodeBuddy](https://codebuddy.ai). [Más de 35 agentes adicionales](https://github.com/vercel-labs/skills#supported-agents) vía `npx skills`. Calidad de contenido evaluada por [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark) (80 items). Autoridad de dominio evaluada por [CITE Domain Rating](https://github.com/aaron-he-zhu/cite-domain-rating) (40 items).
+Skills y comandos de Claude para Optimización de Motores de Búsqueda (SEO) y Optimización de Motores Generativos (GEO). Sin dependencias. Instalación nativa en [Claude Code](https://claude.ai/download), [OpenClaw](https://openclaw.com), [Gemini CLI](https://geminicli.com), [Qwen Code](https://qwenlm.github.io/qwen-code-docs/), [Amp](https://ampcode.com), [Kimi](https://moonshotai.github.io/kimi-cli/), [CodeBuddy](https://codebuddy.ai). [Más de 35 agentes adicionales](https://github.com/vercel-labs/skills#supported-agents) vía `npx skills`. Calidad de contenido evaluada por [CORE-EEAT Benchmark](https://github.com/Imranwaheed786/core-eeat-content-benchmark) (80 items). Autoridad de dominio evaluada por [CITE Domain Rating](https://github.com/Imranwaheed786/cite-domain-rating) (40 items).
 
 > **SEO** te posiciona en los resultados de búsqueda. **GEO** hace que los sistemas de IA (ChatGPT, Perplexity, Google AI Overviews) te citen. Esta biblioteca cubre ambos.
 
@@ -26,32 +26,32 @@ Skills y comandos de Claude para Optimización de Motores de Búsqueda (SEO) y O
 
 ```bash
 # Claude Code
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 
 # OpenClaw / ClawHub
-clawhub install aaron-he-zhu/<skill>
+clawhub install Imranwaheed786/<skill>
 
 # Gemini CLI
-gemini extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+gemini extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Qwen Code
-qwen extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+qwen extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Amp
-amp skill add aaron-he-zhu/seo-geo-claude-skills
+amp skill add Imranwaheed786/seo-geo-claude-skills
 
 # Kimi Code CLI
-kimi plugin install https://github.com/aaron-he-zhu/seo-geo-claude-skills.git
+kimi plugin install https://github.com/Imranwaheed786/seo-geo-claude-skills.git
 
 # CodeBuddy (en la app, 2 pasos)
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 /plugin install aaron-seo-geo
 
 # Alternativa universal (Cursor, Codex, opencode, Windsurf, Copilot y 35+ agentes)
-npx skills add aaron-he-zhu/seo-geo-claude-skills
+npx skills add Imranwaheed786/seo-geo-claude-skills
 
 # Solo un skill individual
-npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research
+npx skills add Imranwaheed786/seo-geo-claude-skills -s keyword-research
 ```
 
 Después de instalar, usa directamente:
@@ -138,7 +138,7 @@ O ejecuta un comando:
 
 ## Contribuir
 
-Las contribuciones son bienvenidas. Consulta [CONTRIBUTING.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONTRIBUTING.md).
+Las contribuciones son bienvenidas. Consulta [CONTRIBUTING.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONTRIBUTING.md).
 
 ## Licencia
 

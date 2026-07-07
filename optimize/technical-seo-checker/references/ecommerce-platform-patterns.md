@@ -1,6 +1,6 @@
 # E-commerce Platform SEO Patterns
 
-Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md). Use alongside [bulk-audit-playbook.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/references/bulk-audit-playbook.md) when the site runs on a recognizable e-commerce platform. Platform-specific defaults save 60-80% of the time vs. diagnosing from scratch.
+Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md). Use alongside [bulk-audit-playbook.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/references/bulk-audit-playbook.md) when the site runs on a recognizable e-commerce platform. Platform-specific defaults save 60-80% of the time vs. diagnosing from scratch.
 
 ---
 

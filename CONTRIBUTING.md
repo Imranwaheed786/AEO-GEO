@@ -4,7 +4,7 @@ Thanks for your interest in contributing to the SEO & GEO Skills Library! This g
 
 ## Requesting a Skill
 
-If you have an idea for a skill but don't want to build it yourself, [open a Skill Request issue](https://github.com/aaron-he-zhu/seo-geo-claude-skills/issues/new?template=skill-request.yml).
+If you have an idea for a skill but don't want to build it yourself, [open a Skill Request issue](https://github.com/Imranwaheed786/seo-geo-claude-skills/issues/new?template=skill-request.yml).
 
 ## Adding a New Skill
 
@@ -68,7 +68,7 @@ A well-structured SKILL.md includes:
 - **When to Use This Skill** — specific use cases
 - **What This Skill Does** — numbered list of functions
 - **How to Use** — invocation examples
-- **Data Sources** — which `~~placeholders` it uses (see [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md))
+- **Data Sources** — which `~~placeholders` it uses (see [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md))
 - **Instructions** — step-by-step workflow with markdown templates for output
 - **Validation Checkpoints** — input and output quality checks
 - **Example** — concrete input/output example
@@ -95,7 +95,7 @@ After adding or updating a skill, **all 5 files must stay in sync**:
 - [ ] `VERSIONS.md` — add or update the skill's version and date
 - [ ] `.claude-plugin/plugin.json` — add the skill path to the `skills` array
 - [ ] `marketplace.json` (repo root) — add the skill path to the `skills` array (must match plugin.json exactly)
-- [ ] `.claude-plugin/marketplace.json` — **mirror** of the repo-root file, must be byte-identical (run `cp marketplace.json .claude-plugin/marketplace.json` after editing the root). The CI script `.github/scripts/sync-skills.js` handles this automatically on push to main, but manual edits need the copy. See [#8](https://github.com/aaron-he-zhu/seo-geo-claude-skills/issues/8) for why this is a real file copy and not a symlink.
+- [ ] `.claude-plugin/marketplace.json` — **mirror** of the repo-root file, must be byte-identical (run `cp marketplace.json .claude-plugin/marketplace.json` after editing the root). The CI script `.github/scripts/sync-skills.js` handles this automatically on push to main, but manual edits need the copy. See [#8](https://github.com/Imranwaheed786/seo-geo-claude-skills/issues/8) for why this is a real file copy and not a symlink.
 - [ ] `README.md` — add the skill to the appropriate category table
 - [ ] `CLAUDE.md` — add the skill to the phase/category table
 

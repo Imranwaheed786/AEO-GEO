@@ -1,6 +1,6 @@
 # AI Overview Recovery Playbook
 
-Referenced from [SKILL.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md). Use when AI Overviews (Google) or similar AI-generated answer boxes are diverting traffic away from your pages — specifically for the recovery workflow, not generic GEO optimization.
+Referenced from [SKILL.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md). Use when AI Overviews (Google) or similar AI-generated answer boxes are diverting traffic away from your pages — specifically for the recovery workflow, not generic GEO optimization.
 
 ---
 
@@ -164,6 +164,6 @@ If no recovery at T+28:
 
 ## See also
 
-- [entity-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — fix the entity gap if competitors cite because they have Knowledge Graph presence you lack
-- [content-refresher](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) — execute the rewrites identified in Phase 3
-- [technical-seo-checker LLM crawler guide](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/references/llm-crawler-handling.md) — ensure AI engines can actually see your content
+- [entity-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/entity-optimizer/SKILL.md) — fix the entity gap if competitors cite because they have Knowledge Graph presence you lack
+- [content-refresher](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) — execute the rewrites identified in Phase 3
+- [technical-seo-checker LLM crawler guide](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/references/llm-crawler-handling.md) — ensure AI engines can actually see your content

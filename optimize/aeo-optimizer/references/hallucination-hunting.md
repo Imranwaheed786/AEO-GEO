@@ -248,7 +248,7 @@ After identifying the USPs your client should own, publish them across:
 - [ ] Video content (YouTube descriptions)
 - [ ] Schema markup (structured data)
 
-**Critical rule**: Use the **exact same phrasing** across all platforms. The AI checks for consistency (Filter A from [llm-ranking-mechanics.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md)).
+**Critical rule**: Use the **exact same phrasing** across all platforms. The AI checks for consistency (Filter A from [llm-ranking-mechanics.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/references/llm-ranking-mechanics.md)).
 
 ## Complete Hallucination Hunting Workflow
 

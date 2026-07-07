@@ -167,6 +167,6 @@ Useful for agencies planning the team's focus for the coming period.
 
 ## Related Skills
 
-- [performance-reporter](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/performance-reporter/SKILL.md) -- Comprehensive performance reporting
-- [domain-authority-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md) -- CITE domain authority scoring
-- [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) -- CORE-EEAT content quality scoring
+- [performance-reporter](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/monitor/performance-reporter/SKILL.md) -- Comprehensive performance reporting
+- [domain-authority-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/domain-authority-auditor/SKILL.md) -- CITE domain authority scoring
+- [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) -- CORE-EEAT content quality scoring

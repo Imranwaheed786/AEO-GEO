@@ -28,17 +28,17 @@ Run after editing `.claude-plugin/plugin.json` `version` field. The command read
 ## Workflow
 
 1. **Read canonical source**:
-   - Read [.claude-plugin/plugin.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/.claude-plugin/plugin.json). Extract top-level `version`. This is the target value (call it `$V`).
+   - Read [.claude-plugin/plugin.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/.claude-plugin/plugin.json). Extract top-level `version`. This is the target value (call it `$V`).
    - If the field is missing or empty, stop with an error and ask the user to set it first.
 
 2. **Update each target file** by writing `$V` into every path listed below. Use the Edit tool with precise old_string → new_string matches; do not re-format unrelated JSON (preserve indentation, key order, trailing newline).
 
    | Target file | Paths to update |
    |---|---|
-   | [marketplace.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/marketplace.json) | `metadata.version`, `plugins[0].version` |
-   | [gemini-extension.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/gemini-extension.json) | top-level `version` |
-   | [qwen-extension.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/qwen-extension.json) | top-level `version` |
-   | [.codebuddy-plugin/marketplace.json](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/.codebuddy-plugin/marketplace.json) | top-level `version`, `plugins[0].version` |
+   | [marketplace.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/marketplace.json) | `metadata.version`, `plugins[0].version` |
+   | [gemini-extension.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/gemini-extension.json) | top-level `version` |
+   | [qwen-extension.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/qwen-extension.json) | top-level `version` |
+   | [.codebuddy-plugin/marketplace.json](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/.codebuddy-plugin/marketplace.json) | top-level `version`, `plugins[0].version` |
 
    **Do NOT** touch any other `version` field in the repo (e.g., nested schema versions, legacy changelog copies, SKILL.md `metadata.version`). Those are governed by other rules and should move independently.
 
@@ -57,10 +57,10 @@ Run after editing `.claude-plugin/plugin.json` `version` field. The command read
    ```
 
 5. **Follow-ups the command does NOT do** (flag these so the user remembers):
-   - 20 SKILL.md files each carry their own `metadata.version` — bump manually per the version policy in [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) Contribution Rules
-   - [VERSIONS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md) skills table and changelog — add a new entry
-   - [CITATION.cff](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CITATION.cff) `version` + `date-released`
-   - [README.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/README.md) + 5 localized docs version badges
+   - 20 SKILL.md files each carry their own `metadata.version` — bump manually per the version policy in [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) Contribution Rules
+   - [VERSIONS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/VERSIONS.md) skills table and changelog — add a new entry
+   - [CITATION.cff](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CITATION.cff) `version` + `date-released`
+   - [README.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/README.md) + 5 localized docs version badges
 
 ## Fallback for no-Claude environments
 
@@ -76,5 +76,5 @@ V=$(jq -r .version .claude-plugin/plugin.json) && \
 
 ## Related
 
-- Contribution rules: [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) §Contribution Rules
-- Version history: [VERSIONS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md)
+- Contribution rules: [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) §Contribution Rules
+- Version history: [VERSIONS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/VERSIONS.md)

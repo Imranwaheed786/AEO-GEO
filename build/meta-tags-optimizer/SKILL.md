@@ -4,11 +4,11 @@ description: 'Optimize title tags, meta descriptions, Open Graph, Twitter cards 
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when optimizing title tags, meta descriptions, Open Graph tags, or Twitter Cards for a page."
 argument-hint: "<page URL or content>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "low"
   tags:
@@ -83,8 +83,8 @@ metadata:
 
 # Meta Tags Optimizer
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill creates compelling, optimized meta tags that improve click-through rates from search results and enhance social media sharing. It covers title tags, meta descriptions, and social meta tags.
@@ -115,7 +115,7 @@ Use this when the conversation involves a shippable asset or transformation that
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Create Meta Tags
 
@@ -143,14 +143,14 @@ Create Open Graph and Twitter card tags for [page/URL]
 
 **Expected output**: a ready-to-use asset or implementation-ready transformation plus a short handoff summary ready for `memory/content/`.
 
-- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the brief, target keywords, entity inputs, quality constraints, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing content, metadata, or schema deliverable plus a reusable summary that can be stored under `memory/content/`.
 - **Promotes**: approved angles, messaging choices, missing evidence, and publish blockers to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the asset is ready for review or deployment.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -161,7 +161,7 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 ## Data Sources
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
 **With ~~search console + ~~SEO tool connected:**
 Automatically pull current meta tags, CTR data by query, competitor title/description patterns, SERP preview data, and impression/click metrics to identify optimization opportunities.
@@ -186,7 +186,7 @@ When a user requests meta tag optimization, run these six steps:
 5. **CORE-EEAT Alignment Check** — verify C01 (Intent Alignment) and C02 (Direct Answer) with Pass/Warn/Fail
 6. **Provide CTR Optimization Tips** — power words analysis, CTR boosting elements table (Numbers +20-30%, Year +15-20%, Power Words +10-15%, Question +10-15%, Brackets +10%), A/B test suggestions
 
-> **Reference**: See [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) for full templates (page analysis, title/description formula options, CORE-EEAT alignment matrix, CTR optimization analysis), worked example, and tips. See [references/meta-tag-code-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) for HTML code templates.
+> **Reference**: See [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) for full templates (page analysis, title/description formula options, CORE-EEAT alignment matrix, CTR optimization analysis), worked example, and tips. See [references/meta-tag-code-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) for HTML code templates.
 
 ## Validation Checkpoints
 
@@ -197,7 +197,7 @@ When a user requests meta tag optimization, run these six steps:
 - [ ] Unique value proposition articulated
 
 ### Output Validation
-- [ ] **Banned-vocab self-check** — scan titles and descriptions for banned words/phrases per [skill-contract.md §Output Voice](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md). Especially: `crucial, robust, leverage, seamless, unlock, cutting-edge, empower, streamline`. Meta tags are short — every word counts.
+- [ ] **Banned-vocab self-check** — scan titles and descriptions for banned words/phrases per [skill-contract.md §Output Voice](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md). Especially: `crucial, robust, leverage, seamless, unlock, cutting-edge, empower, streamline`. Meta tags are short — every word counts.
 - [ ] Title length 50-60 characters (displays fully in SERP)
 - [ ] Meta description length 150-160 characters
 - [ ] Primary keyword appears in both title and description
@@ -213,11 +213,11 @@ When a user requests meta tag optimization, run these six steps:
 - Title: `<title>How to Start a Podcast in [year]: Complete Beginner's Guide</title>` (~55 chars, keyword front-loaded, power words: Complete, Beginner's)
 - Description: `<meta name="description" content="Learn how to start a podcast in [year] with our step-by-step guide. Covers equipment, hosting, recording, and launching your first episode. Start podcasting today!">` (~163 chars, CTA included)
 
-See the full example (with OG, Twitter, Article tags and 3 A/B variations) in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md#example).
+See the full example (with OG, Twitter, Article tags and 3 A/B variations) in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md#example).
 
 ## Tips for Success
 
-Front-load keywords; match intent; be specific; test variations; update regularly; check competitors. Full list in [references/instructions-detail.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md#tips-for-success).
+Front-load keywords; match intent; be specific; test variations; update regularly; check competitors. Full list in [references/instructions-detail.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md#tips-for-success).
 
 
 ### Save Results
@@ -238,11 +238,11 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Reference Materials
 
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) — Full 6-step workflow, title/description formulas, CORE-EEAT alignment matrix, CTR analysis, worked example, tips
-- [Meta Tag Formulas](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-formulas.md) — Proven title and description formulas
-- [Meta Tag Code Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) — HTML templates (OG, Twitter, article tags)
-- [CTR and Social Reference](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/ctr-and-social-reference.md) — Page-type templates, CTR data, OG best practices
+- [Instructions Detail](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) — Full 6-step workflow, title/description formulas, CORE-EEAT alignment matrix, CTR analysis, worked example, tips
+- [Meta Tag Formulas](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-formulas.md) — Proven title and description formulas
+- [Meta Tag Code Templates](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) — HTML templates (OG, Twitter, article tags)
+- [CTR and Social Reference](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/ctr-and-social-reference.md) — Page-type templates, CTR data, OG best practices
 
 ## Next Best Skill
 
-- **Primary**: [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) — complete the SERP packaging with structured data.
+- **Primary**: [schema-markup-generator](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) — complete the SERP packaging with structured data.

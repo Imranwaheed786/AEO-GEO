@@ -96,5 +96,5 @@ A/B TEST RECOMMENDATIONS (when mode="a/b-test")
 
 ## Related Skills
 
-- [meta-tags-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/SKILL.md) -- Full meta tag optimization workflow
-- [seo-content-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) -- SEO-optimized content creation
+- [meta-tags-optimizer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/SKILL.md) -- Full meta tag optimization workflow
+- [seo-content-writer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) -- SEO-optimized content creation

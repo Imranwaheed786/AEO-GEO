@@ -8,7 +8,7 @@ Full workflow templates, CORE-EEAT schema mapping, rich result eligibility, impl
 
 ### 1. Identify Content Type and Rich Result Opportunity
 
-Reference the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) item **O05 (Schema Markup)** for content-type to schema mapping:
+Reference the [CORE-EEAT Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) item **O05 (Schema Markup)** for content-type to schema mapping:
 
 ```markdown
 ### CORE-EEAT Schema Mapping (O05)
@@ -55,7 +55,7 @@ Reference the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/seo-geo-clau
 
 Based on the identified content type, generate the appropriate JSON-LD schema. Supported types: FAQPage, HowTo, Article/BlogPosting/NewsArticle, Product, LocalBusiness, Organization, BreadcrumbList, Event, Recipe, and combined multi-type schemas.
 
-> **Reference**: See [references/schema-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) for complete, copy-ready JSON-LD templates for all schema types with required and optional properties.
+> **Reference**: See [references/schema-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/schema-markup-generator/references/schema-templates.md) for complete, copy-ready JSON-LD templates for all schema types with required and optional properties.
 
 For each schema generated, include:
 - All required properties for the chosen type

@@ -146,7 +146,7 @@ After setup, you can use commands like:
 - **Bulk Promotion/Demotion**: `Promote all keywords ranking in top 10 to hot cache` / `Demote all completed campaigns from Q3`
 - **Memory Snapshot**: `Create memory snapshot for [date/milestone]` — point-in-time copy for major milestones
 - **Cross-Project Memory**: `Compare memory with [other project]` — keyword overlaps, competitor intersections across projects
-- **Wiki Lint**: `/seo:wiki-lint [--fix] [--project name] [--retire-preview]` — contradictions, orphans, stale claims, hash mismatches. See [commands/wiki-lint.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/commands/wiki-lint.md)
+- **Wiki Lint**: `/seo:wiki-lint [--fix] [--project name] [--retire-preview]` — contradictions, orphans, stale claims, hash mismatches. See [commands/wiki-lint.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/commands/wiki-lint.md)
 
 ---
 
@@ -183,6 +183,6 @@ Append to the end of the monthly file (`memory/audits/YYYY-MM.md`), newest entri
 - One block per audit. Do not overwrite existing blocks.
 - `target` is the URL or domain audited.
 - `runbook_version` is copied from the current runbook header — this is how `/seo:p2-review` identifies cross-version reruns.
-- `audit_gap_types` is derived from `key_findings[].gap_type` string tags (deferred to P2; until then, leave as `[]`). **Namespace note**: this field is distinct from the `gap_type` enum defined in [references/entity-geo-handoff-schema.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/entity-geo-handoff-schema.md) which classifies entity-level recognition gaps. The auditor archive stores audit-finding gap tags (e.g., `missing`, `shallow`), whereas the entity schema enumerates entity-level gaps (e.g., `knowledge_graph`, `ai_recognition`). Keep both namespaces separate.
+- `audit_gap_types` is derived from `key_findings[].gap_type` string tags (deferred to P2; until then, leave as `[]`). **Namespace note**: this field is distinct from the `gap_type` enum defined in [references/entity-geo-handoff-schema.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/entity-geo-handoff-schema.md) which classifies entity-level recognition gaps. The auditor archive stores audit-finding gap tags (e.g., `missing`, `shallow`), whereas the entity schema enumerates entity-level gaps (e.g., `knowledge_graph`, `ai_recognition`). Keep both namespaces separate.
 - `false_positive` is the ONLY field that can be added/flipped after initial write, via explicit user annotation.
 - If the monthly file does not exist, create it with a single `# Audit Archive — YYYY-MM` header at top.

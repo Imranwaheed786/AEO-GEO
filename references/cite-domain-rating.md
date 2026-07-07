@@ -1,6 +1,6 @@
 # CITE Domain Rating — Skills Reference
 
-> Based on [CITE Domain Rating](https://github.com/aaron-he-zhu/cite-domain-rating) **v1.0** (2026-02-10)
+> Based on [CITE Domain Rating](https://github.com/Imranwaheed786/cite-domain-rating) **v1.0** (2026-02-10)
 >
 > This file is a reference adaptation for the SEO & GEO Skills Library. For the full specification with examples, see the source repository.
 >
@@ -8,7 +8,7 @@
 
 **4 dimensions × 10 items = 40 evaluation criteria** for assessing domain authority in the Generative Engine Optimization (GEO) era.
 
-**Sister benchmark**: [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — content-level quality assessment (80 items).
+**Sister benchmark**: [CORE-EEAT Content Benchmark](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — content-level quality assessment (80 items).
 
 ---
 
@@ -141,7 +141,7 @@
 
 ### Veto Items
 
-Failing any veto item activates the Critical Fail Cap. The cap arithmetic and thresholds are defined in [auditor-runbook.md §2](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Do not restate cap numbers here or elsewhere — this file owns the item definitions only.
+Failing any veto item activates the Critical Fail Cap. The cap arithmetic and thresholds are defined in [auditor-runbook.md §2](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Do not restate cap numbers here or elsewhere — this file owns the item definitions only.
 
 | Veto ID | Dimension | Check |
 |---------|-----------|-------|
@@ -149,9 +149,9 @@ Failing any veto item activates the Critical Fail Cap. The cap arithmetic and th
 | **T05** | Trust | Near-identical backlink profile found on another domain (manipulation network) |
 | **T09** | Trust | Google manual action or deindexing (zero trust) |
 
-**Single veto fail**: cap applies per [Runbook §2 decision table](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Also raises a **Manipulation Alert** in the handoff `open_loops` field.
+**Single veto fail**: cap applies per [Runbook §2 decision table](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Also raises a **Manipulation Alert** in the handoff `open_loops` field.
 
-**2+ veto fails**: audit returns `status: BLOCKED` per [Runbook §2 Worked Example 3](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Calibration for a numeric multi-veto cap is pending v7.3, gated on 30+ real multi-veto audits in `memory/audits/`.
+**2+ veto fails**: audit returns `status: BLOCKED` per [Runbook §2 Worked Example 3](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md). Calibration for a numeric multi-veto cap is pending v7.3, gated on 30+ real multi-veto audits in `memory/audits/`.
 
 ---
 
@@ -428,7 +428,7 @@ What is the domain's primary function?
 
 ## 8. Data Source Mapping
 
-> Maps each check item to data sources, tools, and audit methods. Use `~~placeholder` categories from [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) when integrations are available.
+> Maps each check item to data sources, tools, and audit methods. Use `~~placeholder` categories from [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) when integrations are available.
 
 | Check Item | Data Source | Tools | Audit Method |
 |-----------|------------|-------|-------------|

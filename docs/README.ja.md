@@ -2,13 +2,13 @@
 
 **20スキル。15コマンド。検索ランキング + AI引用を同時に。**
 
-[![GitHub Stars](https://img.shields.io/github/stars/aaron-he-zhu/seo-geo-claude-skills?style=flat)](https://github.com/aaron-he-zhu/seo-geo-claude-skills)
-[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md)
-[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Imranwaheed786/seo-geo-claude-skills?style=flat)](https://github.com/Imranwaheed786/seo-geo-claude-skills)
+[![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/VERSIONS.md)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/LICENSE)
 
 [English](../README.md) | [中文](README.zh.md) | **日本語** | [한국어](README.ko.md) | [Español](README.es.md) | [Português](README.pt.md)
 
-検索エンジン最適化（SEO）と生成エンジン最適化（GEO）のためのClaudeスキル＆コマンド集。依存関係ゼロ。[Claude Code](https://claude.ai/download)、[OpenClaw](https://openclaw.com)、[Gemini CLI](https://geminicli.com)、[Qwen Code](https://qwenlm.github.io/qwen-code-docs/)、[Amp](https://ampcode.com)、[Kimi](https://moonshotai.github.io/kimi-cli/)、[CodeBuddy](https://codebuddy.ai)にネイティブ対応。[35以上のエージェント](https://github.com/vercel-labs/skills#supported-agents)は `npx skills` 経由。コンテンツ品質は[CORE-EEATベンチマーク](https://github.com/aaron-he-zhu/core-eeat-content-benchmark)（80項目）、ドメイン権威は[CITEドメイン評価](https://github.com/aaron-he-zhu/cite-domain-rating)（40項目）で評価。
+検索エンジン最適化（SEO）と生成エンジン最適化（GEO）のためのClaudeスキル＆コマンド集。依存関係ゼロ。[Claude Code](https://claude.ai/download)、[OpenClaw](https://openclaw.com)、[Gemini CLI](https://geminicli.com)、[Qwen Code](https://qwenlm.github.io/qwen-code-docs/)、[Amp](https://ampcode.com)、[Kimi](https://moonshotai.github.io/kimi-cli/)、[CodeBuddy](https://codebuddy.ai)にネイティブ対応。[35以上のエージェント](https://github.com/vercel-labs/skills#supported-agents)は `npx skills` 経由。コンテンツ品質は[CORE-EEATベンチマーク](https://github.com/Imranwaheed786/core-eeat-content-benchmark)（80項目）、ドメイン権威は[CITEドメイン評価](https://github.com/Imranwaheed786/cite-domain-rating)（40項目）で評価。
 
 > **SEO**は検索結果でのランキングを獲得します。**GEO**はAIシステム（ChatGPT、Perplexity、Google AI Overviews）からの引用を獲得します。このライブラリは両方をカバーします。
 
@@ -26,32 +26,32 @@
 
 ```bash
 # Claude Code
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 
 # OpenClaw / ClawHub
-clawhub install aaron-he-zhu/<skill>
+clawhub install Imranwaheed786/<skill>
 
 # Gemini CLI
-gemini extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+gemini extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Qwen Code
-qwen extensions install https://github.com/aaron-he-zhu/seo-geo-claude-skills
+qwen extensions install https://github.com/Imranwaheed786/seo-geo-claude-skills
 
 # Amp
-amp skill add aaron-he-zhu/seo-geo-claude-skills
+amp skill add Imranwaheed786/seo-geo-claude-skills
 
 # Kimi Code CLI
-kimi plugin install https://github.com/aaron-he-zhu/seo-geo-claude-skills.git
+kimi plugin install https://github.com/Imranwaheed786/seo-geo-claude-skills.git
 
 # CodeBuddy（アプリ内、2ステップ）
-/plugin marketplace add aaron-he-zhu/seo-geo-claude-skills
+/plugin marketplace add Imranwaheed786/seo-geo-claude-skills
 /plugin install aaron-seo-geo
 
 # 汎用フォールバック（Cursor、Codex、opencode、Windsurf、Copilotなど35+エージェント）
-npx skills add aaron-he-zhu/seo-geo-claude-skills
+npx skills add Imranwaheed786/seo-geo-claude-skills
 
 # 単一スキルのみ
-npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research
+npx skills add Imranwaheed786/seo-geo-claude-skills -s keyword-research
 ```
 
 インストール後すぐに使えます：
@@ -138,7 +138,7 @@ npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research
 
 ## コントリビューション
 
-コントリビューションを歓迎します！[CONTRIBUTING.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONTRIBUTING.md)をご覧ください。
+コントリビューションを歓迎します！[CONTRIBUTING.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONTRIBUTING.md)をご覧ください。
 
 ## ライセンス
 

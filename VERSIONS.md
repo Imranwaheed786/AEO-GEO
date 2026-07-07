@@ -1,6 +1,6 @@
 # SEO & GEO Skills Library — Versions
 
-Current versions of all skills. Agents can fetch this file from `https://raw.githubusercontent.com/aaron-he-zhu/seo-geo-claude-skills/main/VERSIONS.md` once per session to check for updates.
+Current versions of all skills. Agents can fetch this file from `https://raw.githubusercontent.com/Imranwaheed786/seo-geo-claude-skills/main/VERSIONS.md` once per session to check for updates.
 
 **Versioning**: Skill versions (`metadata.version` in SKILL.md) track skill content changes independently. Plugin version (in `plugin.json`) tracks manifest and infrastructure changes.
 
@@ -153,7 +153,7 @@ Carried forward from v8.0.3 interim work:
 
 - Gemini CLI: `gemini extensions install <github-url>` — via new `gemini-extension.json`
 - Qwen Code: `qwen extensions install <github-url>` — via new `qwen-extension.json`
-- Amp: `amp skill add aaron-he-zhu/seo-geo-claude-skills` — works out-of-box
+- Amp: `amp skill add Imranwaheed786/seo-geo-claude-skills` — works out-of-box
 - Kimi Code CLI: `kimi plugin install <github-url>` — works out-of-box
 - CodeBuddy: `/plugin marketplace add <repo>` then `/plugin install aaron-seo-geo` (in-app 2-step) — via new `.codebuddy-plugin/marketplace.json`
 
@@ -161,11 +161,11 @@ Carried forward from v8.0.3 interim work:
 
 v9.0.0 removes **all Python scripts** from the repo to enforce AGENTS.md's "content-only repository" claim. The two previous dev utilities are now slash commands:
 
-- `scripts/sync-versions.py` → deleted; replaced by [`/seo:sync-versions`](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/commands/sync-versions.md) maintenance command (pure-markdown; includes a jq one-liner fallback for CI)
-- `scripts/validate-descriptions.py` → deleted; replaced by [`/seo:validate-library`](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/commands/validate-library.md) maintenance command
+- `scripts/sync-versions.py` → deleted; replaced by [`/seo:sync-versions`](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/commands/sync-versions.md) maintenance command (pure-markdown; includes a jq one-liner fallback for CI)
+- `scripts/validate-descriptions.py` → deleted; replaced by [`/seo:validate-library`](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/commands/validate-library.md) maintenance command
 - `scripts/validate-skill.sh` retained (bash, pre-existing, ClawHub spec validator)
 
-Contribution rule added to [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md): new developer utilities go as `commands/*.md` slash commands, not `.py` scripts.
+Contribution rule added to [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md): new developer utilities go as `commands/*.md` slash commands, not `.py` scripts.
 
 #### Infrastructure
 
@@ -219,17 +219,17 @@ Unifies all 20 skill versions to 8.0.0. Consolidates v7.0.0 (Wiki Knowledge Laye
 - **CLAUDE.md 350-line rule** formally exempted for auditor-class skills to accommodate the inlined Runbook (~700 line ceiling).
 
 **New reference files**:
-- [references/auditor-runbook.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — authoritative Runbook
-- [references/AUDITOR-AUTHORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md) — onboarding guide for new auditor-class skill authors
-- [references/decisions/README.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/README.md) — Architecture Decision Record convention
-- [references/decisions/2026-04-adr-001-inline-auditor-runbook.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — rationale for this release
+- [references/auditor-runbook.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/auditor-runbook.md) — authoritative Runbook
+- [references/AUDITOR-AUTHORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/AUDITOR-AUTHORS.md) — onboarding guide for new auditor-class skill authors
+- [references/decisions/README.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/README.md) — Architecture Decision Record convention
+- [references/decisions/2026-04-adr-001-inline-auditor-runbook.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/decisions/2026-04-adr-001-inline-auditor-runbook.md) — rationale for this release
 - `memory/hot-cache.md` seeded with an Auditor Runbook index line
 - `memory/audits/` directory initialized for downstream P2 trigger evaluation
 
 **Modified reference files**:
-- [references/skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) — added Auditor-class Extension clause to Handoff Summary Format
-- [references/core-eeat-benchmark.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — veto section links to Runbook §2 for cap arithmetic, no numbers restated
-- [references/cite-domain-rating.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — same treatment for T03/T05/T09
+- [references/skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) — added Auditor-class Extension clause to Handoff Summary Format
+- [references/core-eeat-benchmark.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/core-eeat-benchmark.md) — veto section links to Runbook §2 for cap arithmetic, no numbers restated
+- [references/cite-domain-rating.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/cite-domain-rating.md) — same treatment for T03/T05/T09
 
 **Shipped alongside v7.1.0**: `/seo:contract-lint` drift detection command (dual-hash validation: `source_sha256` + `block_sha256`), `/seo:p2-review` command for July 2026 tombstone evaluation, `references/contract-fail-caps.md` cap numbers SSOT, PostToolUse hook for external Artifact Gate validation (with silent-skip for non-audit Writes).
 
@@ -245,7 +245,7 @@ Reviewed across three rounds by 15 agent perspectives: Round 1 (Skeptic / UX Adv
 
 Major release: wiki compilation layer for cross-skill knowledge synthesis, plus infrastructure and community upgrades accumulated since v6.0.0. Inspired by [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
-**Wiki Knowledge Layer** ([full spec](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)):
+**Wiki Knowledge Layer** ([full spec](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/proposal-wiki-layer-v3.md)):
 - **Structured index**: `memory/wiki/index.md` — auto-refreshed compiled index of all WARM files with precise fields (score, 健康度, status, next_action, mtime) and best-effort summaries
 - **Project isolation**: `memory/wiki/<project>/index.md` partitioned by hot-cache `project` field; single-project users unaffected
 - **Auto-refresh**: PostToolUse silently updates index after WARM writes; first init requires manual trigger (`refresh wiki index`)
@@ -376,7 +376,7 @@ Multilingual trigger optimization and refinement for ClawHub/skills.sh marketpla
 Unified operating model: shared skill contract, prompt-based hook automation, three-tier temperature memory, protocol-layer gates, state write-through, trigger widening, and published-link hardening.
 
 **Unified skill contract (Plan C)**:
-- Added shared [skill contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [state model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) reference documents
+- Added shared [skill contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [state model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) reference documents
 - Updated all 20 SKILL.md files with `When This Must Trigger`, `Quick Start`, `Skill Contract`, and `Next Best Skill` sections
 - Replaced bulky per-file 20-skill navigation blocks with a compact system-mode header
 

@@ -96,5 +96,5 @@ TESTING & VALIDATION
 
 ## Related Skills
 
-- [alert-manager](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/alert-manager/SKILL.md) -- Full alert configuration and management
-- [rank-tracker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) -- Ranking monitoring and tracking
+- [alert-manager](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/monitor/alert-manager/SKILL.md) -- Full alert configuration and management
+- [rank-tracker](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) -- Ranking monitoring and tracking

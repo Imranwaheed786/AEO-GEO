@@ -4,11 +4,11 @@ description: 'Optimize internal links: site architecture, authority distribution
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required. Optional: MCP network access for SEO tool integrations."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when improving internal link structure, anchor text distribution, orphan pages, or site architecture."
 argument-hint: "<URL or sitemap>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "low"
   tags:
@@ -80,8 +80,8 @@ metadata:
 # Internal Linking Optimizer
 
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This optimization skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 20 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This optimization skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 
 This skill analyzes your site's internal link structure and provides recommendations to improve SEO through strategic internal linking. It helps distribute authority, establish topical relevance, and improve crawlability.
@@ -112,7 +112,7 @@ Use this when the conversation involves a diagnosis or repair plan that should f
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Analyze Current Structure
 
@@ -148,14 +148,14 @@ Optimize anchor text across the site
 
 **Expected output**: a scored diagnosis, prioritized repair plan, and a short handoff summary ready for `memory/audits/`.
 
-- **Reads**: the current page or site state, symptoms, prior audits, and current priorities from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the current page or site state, symptoms, prior audits, and current priorities from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: a user-facing audit or optimization plan plus a reusable summary that can be stored under `memory/audits/`.
 - **Promotes**: blocking defects, repeated weaknesses, and fix priorities to `memory/open-loops.md` and `memory/decisions.md`.
 - **Next handoff**: use the `Next Best Skill` below when the repair path is clear.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -168,9 +168,9 @@ Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summa
 
 > **Note:** All integrations are optional. This skill works without any API keys — users provide data manually when no tools are connected.
 
-> See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
+> See [CONNECTORS.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CONNECTORS.md) for tool category placeholders.
 
-**Scraping legality**: Before crawling any domain that is not your own or not under written authorization, verify `robots.txt` disallows, respect `Crawl-delay`, and confirm target TOS permits automated access. See [SECURITY.md §Scraping Boundaries](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/SECURITY.md).
+**Scraping legality**: Before crawling any domain that is not your own or not under written authorization, verify `robots.txt` disallows, respect `Crawl-delay`, and confirm target TOS permits automated access. See [SECURITY.md §Scraping Boundaries](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/SECURITY.md).
 
 **With ~~web crawler + ~~analytics connected:**
 Claude can automatically perform a full site crawl via ~~web crawler to map the complete link graph, fetch page performance metrics from ~~analytics to identify high-value pages, and analyze link flow throughout the site. This enables data-driven internal linking strategies.
@@ -262,23 +262,23 @@ When a user requests internal linking optimization:
 
 3. **Analyze Anchor Text Distribution** — Current anchor patterns, distribution-by-page breakdown, over-optimization/generic flag, per-page recommendations (CORE-EEAT R08)
 
-   > **Reference**: See [references/linking-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the anchor text analysis template (Step 3) including the CORE-EEAT R08 alignment note.
+   > **Reference**: See [references/linking-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the anchor text analysis template (Step 3) including the CORE-EEAT R08 alignment note.
 
 4. **Create Topic Cluster Link Strategy** — Map current pillar/cluster links, recommend link structure, list specific links to add
 
-   > **Reference**: See [references/linking-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the topic cluster link strategy template (Step 4).
+   > **Reference**: See [references/linking-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the topic cluster link strategy template (Step 4).
 
 5. **Find Contextual Link Opportunities** — Analyze each page for topic-relevant link opportunities, prioritize high-impact additions
 
-   > **Reference**: See [references/linking-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the contextual link opportunities template (Step 5).
+   > **Reference**: See [references/linking-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the contextual link opportunities template (Step 5).
 
 6. **Optimize Navigation and Footer Links** — Analyze main/footer/sidebar/breadcrumb navigation, recommend pages to add or remove
 
-   > **Reference**: See [references/linking-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the navigation optimization template (Step 6).
+   > **Reference**: See [references/linking-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the navigation optimization template (Step 6).
 
 7. **Generate Link Implementation Plan** — Executive summary, current state metrics, phased priority actions (weeks 1-4+), implementation guide, tracking plan
 
-   > **Reference**: See [references/linking-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the full implementation plan template (Step 7).
+   > **Reference**: See [references/linking-templates.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) for the full implementation plan template (Step 7).
 
 ## Validation Checkpoints
 
@@ -299,7 +299,7 @@ When a user requests internal linking optimization:
 
 **Output** (abbreviated): 5 high-value links identified — `/blog/grow-email-list/` for "building your email list" (para 2), `/blog/email-subject-lines/` for "subject lines" (para 5), `/blog/email-segmentation-guide/` for "audience segments", `/services/email-automation/` for CTA section, `/blog/best-email-tools/` for conclusion — each with paragraph location and recommended anchor text.
 
-> **Reference**: See [references/linking-example.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-example.md) for the full worked example (email marketing best practices internal linking opportunities).
+> **Reference**: See [references/linking-example.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-example.md) for the full worked example (email marketing best practices internal linking opportunities).
 
 ## Tips for Success
 
@@ -326,10 +326,10 @@ If any veto-level issue was found (CORE-EEAT T04, C01, R10 or CITE T03, T05, T09
 
 ## Reference Materials
 
-- [Link Architecture Patterns](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/link-architecture-patterns.md) — Architecture models (hub-and-spoke, silo, flat, pyramid, mesh), anchor text diversity framework, link equity flow model, and internal link audit checklist
-- [Linking Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) — Detailed output templates for steps 3-7 (anchor text analysis, topic cluster strategy, contextual opportunities, navigation optimization, implementation plan)
-- [Linking Example](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-example.md) — Full worked example for internal linking opportunities
+- [Link Architecture Patterns](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/link-architecture-patterns.md) — Architecture models (hub-and-spoke, silo, flat, pyramid, mesh), anchor text diversity framework, link equity flow model, and internal link audit checklist
+- [Linking Templates](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-templates.md) — Detailed output templates for steps 3-7 (anchor text analysis, topic cluster strategy, contextual opportunities, navigation optimization, implementation plan)
+- [Linking Example](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/references/linking-example.md) — Full worked example for internal linking opportunities
 
 ## Next Best Skill
 
-- **Primary**: [on-page-seo-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/on-page-seo-auditor/SKILL.md) — verify that revised internal links support the page-level goals.
+- **Primary**: [on-page-seo-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/optimize/on-page-seo-auditor/SKILL.md) — verify that revised internal links support the page-level goals.

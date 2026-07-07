@@ -32,7 +32,7 @@ Run before version bumps, before opening a PR that touches any `SKILL.md`, or wh
 
 ### 1. Description budget (±20% tolerance)
 
-Each `SKILL.md` description (`description:` in YAML frontmatter) should land within this byte budget, measured by `len(text.encode("utf-8"))`. Targets were originally derived empirically from the v7.x release (see [references/skill-contract.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md)) — tuned so a skill's description fits within Anthropic Skills + Vercel Labs `npx skills find` discovery budgets without truncation:
+Each `SKILL.md` description (`description:` in YAML frontmatter) should land within this byte budget, measured by `len(text.encode("utf-8"))`. Targets were originally derived empirically from the v7.x release (see [references/skill-contract.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md)) — tuned so a skill's description fits within Anthropic Skills + Vercel Labs `npx skills find` discovery budgets without truncation:
 
 | Skill category | Target bytes | Tolerance band | Rationale |
 |---|---|---|---|
@@ -72,7 +72,7 @@ No trigger phrase may appear in more than one skill (case-insensitive, after Uni
 
 ### 6. Marketplace file consistency (library-level)
 
-Claude Code's plugin loader reads `.claude-plugin/marketplace.json`, but the repo-root `marketplace.json` is the canonical tracking file documented in [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md). Both paths must exist as **real files** (not symlinks) with **byte-identical content** — symlinks under version control are not portable to Windows without `core.symlinks=true` + Developer Mode, which most users do not have (see [#8](https://github.com/aaron-he-zhu/seo-geo-claude-skills/issues/8)).
+Claude Code's plugin loader reads `.claude-plugin/marketplace.json`, but the repo-root `marketplace.json` is the canonical tracking file documented in [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md). Both paths must exist as **real files** (not symlinks) with **byte-identical content** — symlinks under version control are not portable to Windows without `core.symlinks=true` + Developer Mode, which most users do not have (see [#8](https://github.com/Imranwaheed786/seo-geo-claude-skills/issues/8)).
 
 **This check cannot be done with `Read` alone**: `Read` transparently follows symlinks and returns the target's content, so a broken-symlink-as-text file would parse as JSON on Linux/macOS and the check would pass. It must use Bash to inspect the git index mode and compute SHA-256 on disk.
 
@@ -120,6 +120,6 @@ These bash fallbacks cover checks 2 + 5 but not the description budget, language
 
 ## Related
 
-- Per-skill spec validation (bash): [scripts/validate-skill.sh](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/scripts/validate-skill.sh)
+- Per-skill spec validation (bash): [scripts/validate-skill.sh](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/scripts/validate-skill.sh)
 - Version sync: `/seo:sync-versions`
 - Runbook drift scan: `/seo:contract-lint`

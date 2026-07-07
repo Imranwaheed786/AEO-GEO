@@ -4,11 +4,11 @@ description: 'Use when the user asks to "write section openings", "first sentenc
 version: "9.0.0"
 license: Apache-2.0
 compatibility: "Claude Code ≥1.0, skills.sh marketplace, ClawHub marketplace, Vercel Labs skills ecosystem. No system packages required."
-homepage: "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+homepage: "https://github.com/Imranwaheed786/seo-geo-claude-skills"
 when_to_use: "Use when writing or rewriting section openings for tool pages, calculator pages, SaaS pages, product pages, blog articles, or comparison pages. Also when the user wants answer-first content, snippet-optimized introductions, or entity-forward section starts."
 argument-hint: "<page type> <entity/tool name>"
 metadata:
-  author: aaron-he-zhu
+  author: Imranwaheed786
   version: "9.0.0"
   geo-relevance: "high"
   tags:
@@ -83,8 +83,8 @@ metadata:
 
 # First Sentence Engine
 
-> **[SEO & GEO Skills Library](https://github.com/aaron-he-zhu/seo-geo-claude-skills)** · 21 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
-> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md).
+> **[SEO & GEO Skills Library](https://github.com/Imranwaheed786/seo-geo-claude-skills)** · 21 skills for SEO + GEO · [ClawHub](https://clawhub.ai/u/Imranwaheed786) · [skills.sh](https://skills.sh/Imranwaheed786/seo-geo-claude-skills)
+> **System Mode**: This build skill follows the shared [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) and [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md).
 
 This skill generates section openings using first-sentence logic optimized for semantic SEO, passage-level retrieval, featured snippets, AI answer extraction, and query intent alignment. It applies to tool pages, calculator pages, SaaS pages, product pages, blog articles, and comparison pages.
 
@@ -112,7 +112,7 @@ Use this when the conversation involves writing or rewriting section openings �
 
 ## Quick Start
 
-Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+Start with one of these prompts. Finish with a short handoff summary using the repository format in [Skill Contract](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md).
 
 ### Basic Section Opening
 
@@ -136,14 +136,14 @@ Write informational section openings for a BMI calculator page targeting "BMI ca
 
 **Expected output**: entity-first section openings ready for integration plus a short handoff summary ready for `memory/content/`.
 
-- **Reads**: the page type, entity/tool name, target keyword, section headings (H2/H3), query intent, and prior decisions from [CLAUDE.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
+- **Reads**: the page type, entity/tool name, target keyword, section headings (H2/H3), query intent, and prior decisions from [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) and the shared [State Model](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/state-model.md) when available.
 - **Writes**: entity-first section openings (1–3 sentences per section) plus a reusable summary that can be stored under `memory/content/`.
 - **Promotes**: approved sentence patterns, intent mapping decisions, and rewrite blockers to `memory/hot-cache.md`, `memory/decisions.md`, and `memory/open-loops.md`.
 - **Next handoff**: use the `Next Best Skill` below when the openings are ready for full content writing or quality review.
 
 ### Handoff Summary
 
-Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
+Emit this shape when finishing the skill (see [skill-contract.md §Handoff Summary Format](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/references/skill-contract.md) for the authoritative format):
 
 - **Status**: DONE / DONE_WITH_CONCERNS / BLOCKED / NEEDS_INPUT
 - **Objective**: what was analyzed, created, or fixed
@@ -295,5 +295,5 @@ If any findings should influence ongoing strategy, recommend promoting key concl
 
 ## Next Best Skill
 
-- **Primary**: [seo-content-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — expand the section openings into full content.
-- **Alternative**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing or handing it off.
+- **Primary**: [seo-content-writer](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/build/seo-content-writer/SKILL.md) — expand the section openings into full content.
+- **Alternative**: [content-quality-auditor](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing or handing it off.
