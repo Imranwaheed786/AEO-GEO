@@ -1,14 +1,14 @@
 # SEO & GEO Skills Library — Claude Code Context
 
-This plugin provides **20 skills and 15 commands** for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO). All 20 skills follow one shared contract: trigger, quick start, skill contract, handoff summary, and next best skill. Skills are auto-loaded by context; commands are invoked with `/seo:`.
+This plugin provides **23 skills and 15 commands** for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO). All 22 skills follow one shared contract: trigger, quick start, skill contract, handoff summary, and next best skill. Skills are auto-loaded by context; commands are invoked with `/seo:`.
 
 ## Skills by Phase
 
 | Phase | Skills |
 |-------|--------|
 | **Research** | `keyword-research`, `competitor-analysis`, `serp-analysis`, `content-gap-analysis` |
-| **Build** | `seo-content-writer`, `geo-content-optimizer`, `meta-tags-optimizer`, `schema-markup-generator` |
-| **Optimize** | `on-page-seo-auditor`, `technical-seo-checker`, `internal-linking-optimizer`, `content-refresher` |
+| **Build** | `seo-content-writer`, `geo-content-optimizer`, `meta-tags-optimizer`, `schema-markup-generator`, `first-sentence-engine`, `multi-agent-writer` |
+| **Optimize** | `on-page-seo-auditor`, `technical-seo-checker`, `internal-linking-optimizer`, `content-refresher`, `aeo-optimizer` |
 | **Monitor** | `rank-tracker`, `backlink-analyzer`, `performance-reporter`, `alert-manager` |
 | **Cross-cutting / Protocol** | `content-quality-auditor`, `domain-authority-auditor`, `entity-optimizer`, `memory-management` |
 
@@ -102,9 +102,9 @@ Skills are published **individually** (not as a single plugin package). Each `<c
 # Publish one skill
 /usr/local/bin/clawhub publish <category>/<slug> --version X.Y.Z --changelog "text" --tags latest --no-input
 
-# Publish all 20 skills (batch)
+# Publish all 23 skills (batch)
 export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
-for dir in research/keyword-research research/competitor-analysis research/serp-analysis research/content-gap-analysis build/seo-content-writer build/geo-content-optimizer build/meta-tags-optimizer build/schema-markup-generator optimize/on-page-seo-auditor optimize/technical-seo-checker optimize/internal-linking-optimizer optimize/content-refresher monitor/rank-tracker monitor/backlink-analyzer monitor/performance-reporter monitor/alert-manager cross-cutting/content-quality-auditor cross-cutting/domain-authority-auditor cross-cutting/entity-optimizer cross-cutting/memory-management; do
+for dir in research/keyword-research research/competitor-analysis research/serp-analysis research/content-gap-analysis build/seo-content-writer build/geo-content-optimizer build/meta-tags-optimizer build/schema-markup-generator build/first-sentence-engine build/multi-agent-writer optimize/aeo-optimizer optimize/on-page-seo-auditor optimize/technical-seo-checker optimize/internal-linking-optimizer optimize/content-refresher monitor/rank-tracker monitor/backlink-analyzer monitor/performance-reporter monitor/alert-manager cross-cutting/content-quality-auditor cross-cutting/domain-authority-auditor cross-cutting/entity-optimizer cross-cutting/memory-management; do
   clawhub publish "$dir" --version X.Y.Z --changelog "text" --tags latest --no-input
 done
 ```

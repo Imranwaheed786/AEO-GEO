@@ -16,6 +16,7 @@ Current versions of all skills. Agents can fetch this file from `https://raw.git
 | geo-content-optimizer | build | 9.0.0 | 2026-04-17 |
 | meta-tags-optimizer | build | 9.0.0 | 2026-04-17 |
 | schema-markup-generator | build | 9.0.0 | 2026-04-17 |
+| first-sentence-engine | build | 9.0.0 | 2026-04-30 |
 | on-page-seo-auditor | optimize | 9.0.0 | 2026-04-17 |
 | technical-seo-checker | optimize | 9.0.0 | 2026-04-17 |
 | internal-linking-optimizer | optimize | 9.0.0 | 2026-04-17 |
@@ -27,9 +28,53 @@ Current versions of all skills. Agents can fetch this file from `https://raw.git
 | content-quality-auditor | cross-cutting | 9.0.0 | 2026-04-17 |
 | domain-authority-auditor | cross-cutting | 9.0.0 | 2026-04-17 |
 | entity-optimizer | cross-cutting | 9.0.0 | 2026-04-17 |
+| multi-agent-writer | build | 9.1.0 | 2026-05-27 |
+| aeo-optimizer | optimize | 1.0.0 | 2026-07-06 |
 | memory-management | cross-cutting | 9.0.0 | 2026-04-17 |
 
 ## Changelog
+
+### v9.2.0 — Answer Engine Optimization Skill (2026-07-06)
+
+New optimize skill: `aeo-optimizer`. A strategic AEO skill that transforms content strategy from traditional SEO to Answer Engine Optimization — targeting AI citations, brand visibility, and consensus across ChatGPT, Claude, Gemini, and Google AI Overviews.
+
+**New skill**: `aeo-optimizer` (optimize category)
+- Covers the 4 Answer Engine types (LLMs, AI Overviews, Voice Assistants, Agentic Browsers)
+- Two Pillars framework: Citations (controlling the source) and Visibility (brand recommendation)
+- AI Model personality profiles: ChatGPT (agreeable), Claude (evidence-demanding), Gemini (Google-integrated)
+- Consensus Building strategy with ICP segmentation and multi-platform distribution
+- 5 new AEO KPIs: AI Visibility, Citations, AI Share of Voice, Consensus Score, Navigational Search Lift
+- 8-factor AEO Readiness scoring rubric
+- SEO-to-AEO transformation framework with the 5 core differences
+- Multilingual triggers (EN, ZH, JA, KO, ES, PT)
+
+**New files**:
+- `optimize/aeo-optimizer/SKILL.md` — skill definition (~245 lines)
+- `optimize/aeo-optimizer/references/instructions-detail.md` — full 5-step workflow with worked example
+- `optimize/aeo-optimizer/references/aeo-vs-seo-framework.md` — transformation checklist and KPI mapping
+- `optimize/aeo-optimizer/references/answer-engine-types.md` — 4 engine type profiles and targeting matrix
+- `optimize/aeo-optimizer/references/consensus-building.md` — ICP segmentation, platform distribution, citation strategy
+
+**Tracking files updated**: VERSIONS.md, plugin.json, marketplace.json, CLAUDE.md, README.md
+
+### v9.1.0 — Multi-Agent Semantic Writing System (2026-05-27)
+
+New build skill: `multi-agent-writer`. A 15-agent pipeline that converts a content brief into a complete, entity-rich, semantic SEO content draft optimized for Google NLP, AI Overviews, featured snippets, and LLM answer engines.
+
+**New skill**: `multi-agent-writer` (build category)
+- 15 sequential agents: Brief Interpreter → Macro Context Controller → Entity Researcher → SERP Intent Mapper → Evidence Researcher → Context Vector Architect → Featured Snippet Agent → Semantic Content Writer → Structured Data Writer → EVA Triple Auditor → Discourse Editor → Internal Linking Strategist → Technical SEO Agent → FAQ Extractor → Final Auditor
+- Based on Chapter 5 semantic content writing framework (single macro context, EVA triples, factual sentences, answer-first blocks, 40-word snippets)
+- Invocable via `@writing` trigger
+- Includes full and short master prompts for any LLM
+- Scores final draft out of 100 across 14 criteria
+- 750+ multilingual triggers (EN, ZH, JA, KO, ES, PT)
+
+**New files**:
+- `build/multi-agent-writer/SKILL.md` — skill definition (~250 lines)
+- `build/multi-agent-writer/references/agent-pipeline.md` — full 15-agent specification
+- `build/multi-agent-writer/references/master-prompt.md` — copy-paste prompts for any LLM
+
+**Tracking files updated**: VERSIONS.md, plugin.json, marketplace.json, CLAUDE.md, README.md
 
 ### v9.0.1 — Prompt-injection false positive fix (2026-04-18)
 

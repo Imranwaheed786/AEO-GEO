@@ -1,6 +1,6 @@
 # SEO & GEO Skills Library
 
-**20 skills. 15 commands. Rank in search. Get cited by AI.**
+**23 skills. 15 commands. Rank in search. Get cited by AI.**
 
 [![GitHub Stars](https://img.shields.io/github/stars/aaron-he-zhu/seo-geo-claude-skills?style=flat)](https://github.com/aaron-he-zhu/seo-geo-claude-skills)
 [![Version](https://img.shields.io/badge/version-9.0.1-orange)](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/VERSIONS.md)
@@ -10,7 +10,7 @@
 
 [English](README.md) | [中文](docs/README.zh.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Espanol](docs/README.es.md) | [Portugues](docs/README.pt.md)
 
-Claude Skills and Commands for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO). Zero dependencies, works with [Claude Code](https://claude.ai/download), [Cursor](https://cursor.com), [Codex](https://openai.com/codex), and [35+ other agents](https://skills.sh). Content quality scored by the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark) (80 items). Domain authority scored by [CITE Domain Rating](https://github.com/aaron-he-zhu/cite-domain-rating) (40 items).
+Claude Skills and Commands for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO). Zero dependencies, works with [Claude Code](https://claude.ai/download), [Cursor](https://cursor.com), [Codex](https://openai.com/codex), and [35+ other agents](https://skills.sh). Content quality scored by the [CORE-EEAT Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark) (80 items). Domain authority scored by [CITE Domain Rating](https://github.com/aaron-he-zhu/cite-domain-rating) (40 items).
 
 > **SEO** gets you ranked in search results. **GEO** gets you cited by AI systems (ChatGPT, Perplexity, Google AI Overviews). This library covers both.
 
@@ -195,6 +195,7 @@ Findings promote automatically when referenced frequently. Stale items archive a
 | Full quality assessment | `content-quality-auditor` + `domain-authority-auditor` | → 120-item combined report |
 | Build entity/brand presence | `entity-optimizer` | → `schema-markup-generator` + `geo-content-optimizer` |
 | Generate performance report | `/seo:report <domain> <period>` | → periodic monitoring |
+| Write world-class semantic article | `multi-agent-writer` | → `content-quality-auditor` |
 
 ## Methodology
 
@@ -232,6 +233,8 @@ Skills are organized into four execution phases plus one protocol layer. Use the
 | [geo-content-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/SKILL.md) | Make content quotable and citable by AI systems |
 | [meta-tags-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/SKILL.md) | Create compelling titles, descriptions, and Open Graph tags |
 | [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) | Generate JSON-LD structured data for rich results |
+| [first-sentence-engine](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/first-sentence-engine/SKILL.md) | Generate entity-first, answer-first section openings optimized for snippets and AI extraction |
+| [multi-agent-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/SKILL.md) | Run a 15-agent pipeline to convert content briefs into entity-rich semantic SEO drafts with EVA triples |
 
 ### Optimize — improve existing content and technical health
 
@@ -241,6 +244,7 @@ Skills are organized into four execution phases plus one protocol layer. Use the
 | [technical-seo-checker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md) | Check crawlability, indexing, Core Web Vitals, and site architecture |
 | [internal-linking-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/SKILL.md) | Optimize internal link structure for better crawling and authority flow |
 | [content-refresher](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) | Update outdated content to recover or improve rankings |
+| [aeo-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/SKILL.md) | Transform content strategy from SEO to Answer Engine Optimization — AI citations, visibility, and consensus |
 
 ### Monitor — track performance and catch issues early
 
@@ -364,9 +368,9 @@ Not sure which skill to use? Here's a quick guide by goal:
 
 **Research** — `keyword-research` (keywords, topics, search volume) | `competitor-analysis` (competitive intel, benchmarking) | `serp-analysis` (SERP features, AI overviews) | `content-gap-analysis` (missing topics, content opportunities)
 
-**Build** — `seo-content-writer` (blog posts, articles, SEO copy) | `geo-content-optimizer` (AI citations, LLM optimization) | `meta-tags-optimizer` (titles, descriptions, OG tags) | `schema-markup-generator` (JSON-LD, rich snippets)
+**Build** — `seo-content-writer` (blog posts, articles, SEO copy) | `geo-content-optimizer` (AI citations, LLM optimization) | `meta-tags-optimizer` (titles, descriptions, OG tags) | `schema-markup-generator` (JSON-LD, rich snippets) | `first-sentence-engine` (section openings, snippet-ready intros, answer-first writing) | `multi-agent-writer` (15-agent pipeline, content briefs, EVA triples, semantic drafts)
 
-**Optimize** — `on-page-seo-auditor` (page audit, SEO score) | `technical-seo-checker` (speed, crawlability, Core Web Vitals) | `internal-linking-optimizer` (link structure, silos) | `content-refresher` (update old content, fix decay)
+**Optimize** — `on-page-seo-auditor` (page audit, SEO score) | `technical-seo-checker` (speed, crawlability, Core Web Vitals) | `internal-linking-optimizer` (link structure, silos) | `content-refresher` (update old content, fix decay) | `aeo-optimizer` (answer engine strategy, AI visibility, consensus building)
 
 **Monitor** — `rank-tracker` (keyword positions, trends) | `backlink-analyzer` (link profile, toxic links) | `performance-reporter` (SEO/GEO reports) | `alert-manager` (ranking drops, traffic alerts)
 
@@ -393,6 +397,10 @@ Not sure which skill to use? Here's a quick guide by goal:
 | Open Graph / Twitter cards / social media preview | [meta-tags-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/SKILL.md) |
 | Schema markup / structured data / JSON-LD / rich snippets | [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) |
 | FAQ schema / How-To schema / product markup | [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) |
+| First sentence optimization / section openings / answer-first writing | [first-sentence-engine](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/first-sentence-engine/SKILL.md) |
+| Snippet-ready introductions / entity-first content / passage optimization | [first-sentence-engine](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/first-sentence-engine/SKILL.md) |
+| Multi-agent writing / semantic SEO draft / content brief to article | [multi-agent-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/SKILL.md) |
+| EVA triple writing / entity-rich articles / @writing | [multi-agent-writer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/multi-agent-writer/SKILL.md) |
 | On-page SEO audit / SEO score / page optimization | [on-page-seo-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/on-page-seo-auditor/SKILL.md) |
 | Header tags / image optimization / check my page | [on-page-seo-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/on-page-seo-auditor/SKILL.md) |
 | Technical SEO / page speed / Core Web Vitals | [technical-seo-checker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/technical-seo-checker/SKILL.md) |
@@ -401,6 +409,8 @@ Not sure which skill to use? Here's a quick guide by goal:
 | Page authority distribution / content silos / site navigation | [internal-linking-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/internal-linking-optimizer/SKILL.md) |
 | Update old content / refresh content / content decay | [content-refresher](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) |
 | Declining rankings / revive old blog posts / outdated content | [content-refresher](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/content-refresher/SKILL.md) |
+| Answer engine optimization / AEO strategy / AI visibility | [aeo-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/SKILL.md) |
+| Get recommended by AI / AI share of voice / consensus building | [aeo-optimizer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/optimize/aeo-optimizer/SKILL.md) |
 | Track rankings / keyword positions / how am I ranking | [rank-tracker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) |
 | SERP monitoring / ranking trends / position tracking | [rank-tracker](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/rank-tracker/SKILL.md) |
 | Analyze backlinks / link profile / toxic links | [backlink-analyzer](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/monitor/backlink-analyzer/SKILL.md) |
@@ -422,7 +432,7 @@ Not sure which skill to use? Here's a quick guide by goal:
 
 ## Browse & advanced install
 
-Browse all 20 skills: [GitHub](https://github.com/aaron-he-zhu/seo-geo-claude-skills) · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
+Browse all 23 skills: [GitHub](https://github.com/aaron-he-zhu/seo-geo-claude-skills) · [ClawHub](https://clawhub.ai/u/aaron-he-zhu) · [skills.sh](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
 
 For the full install table (7 native agents + universal fallback + submodule/fork/manual), see [Installation](#installation) above. A few less-common commands:
 
