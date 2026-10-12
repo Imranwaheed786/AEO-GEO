@@ -64,6 +64,20 @@ When a skill recommends running another, pass: objective, key findings/output, e
 
 If `memory-management` is active, prior audit results load automatically from the hot cache in this [CLAUDE.md](https://github.com/Imranwaheed786/seo-geo-claude-skills/blob/main/CLAUDE.md) file.
 
+## Companion Plugin: claude-seo
+
+`.claude/settings.json` enables the third-party [claude-seo](https://github.com/AgriciDaniel/claude-seo) plugin (pinned to `v2.4.2`) for this project. Its commands are `/seo <sub>` (space); this library's are `/seo:<name>` (colon). Several skills overlap, so route by task:
+
+| Task | Use |
+|------|-----|
+| CORE-EEAT / CITE scoring, publish gate, content writing, memory | this library |
+| Technical SEO, schema, hreflang, sitemaps, images, local/maps, ecommerce, programmatic, SXO, agent readiness, Google APIs | claude-seo |
+
+- Never mix claude-seo's `/100` scores with CORE-EEAT or CITE scores in one report or in `memory/hot-cache.md`; the scales are not comparable.
+- claude-seo's PostToolUse hook rejects `HowTo` JSON-LD as deprecated (rich result removed Sept 2023), so don't emit HowTo from `schema-markup-generator`.
+- `/seo drift` (claude-seo) tracks on-page changes; `/seo:geo-drift-check` (this library) checks GEO Score against real AI citations.
+- claude-seo's scripts need Python 3.11+; run `/seo setup` once before using its URL-fetching commands.
+
 ## Tool Connector Pattern
 
 Skills use `~~category` placeholders (e.g., `~~SEO tool`, `~~analytics`). Every skill works without any integrations (Tier 1). MCP servers in `.mcp.json` add Ahrefs, Semrush, SE Ranking, SISTRIX, SimilarWeb, Cloudflare, Vercel, HubSpot, Amplitude, Notion, Webflow, Sanity, Contentful, Slack.
